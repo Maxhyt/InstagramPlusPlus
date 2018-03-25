@@ -1172,7 +1172,7 @@ webpackJsonp([17], {
                             var t = 100 * o.$StoryVideo1 / nt;
                             t = Math.min(t, 100),
                             o.props.onUpdatePreplayPercentage(t),
-                            100 === t && /*o.$StoryVideo21()*/ t = 1
+                            100 === t && o.$StoryVideo21()
                         } else
                             o.props.onUpdatePlayPercentage(Math.min(100, 100 * e.currentTime / e.duration))
                     }, 1e3 * rt)
@@ -1237,9 +1237,8 @@ webpackJsonp([17], {
             ,
             this.$StoryVideo21 = function() {
                 o.$StoryVideo11(),
-                o.props.onNext("automatic_forward"),
                 o.setState({
-                    isEnded: !0
+                    isEnded: !1
                 })
             }
             ,
