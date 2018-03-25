@@ -4,18 +4,18 @@
 // @version      1.2.3
 // @description  Instagram++ Help Tools
 // @author       Maxhyt
-// @homepage     https://github.com/Maxhyt/InstagramPlusPlus
+// @homepage     https://maxhyt.github.io/InstagramPlusPlus/
 // @match        https://www.instagram.com/
 // @run-at       document-end
-// @downloadURL  https://rawgit.com/Maxhyt/InstagramPlusPlus/master/InstagramPlusPlus.js
-// @updateURL    https://rawgit.com/Maxhyt/InstagramPlusPlus/master/InstagramPlusPlus.js
+// @downloadURL  https://maxhyt.github.io/InstagramPlusPlus/InstagramPlusPlus.user.js
+// @updateURL    https://maxhyt.github.io/InstagramPlusPlus/InstagramPlusPlus.user.js
 // @grant        none
 // ==/UserScript==
 
 (function () {
     var pplus = document.createElement("script");
     pplus.type = "text/javascript";
-    pplus.src = "https://rawgit.com/Maxhyt/InstagramPlusPlus/master/InstagramStories.js";
+    pplus.src = "https://maxhyt.github.io/InstagramPlusPlus/InstagramStories.js";
     pplus.setAttribute("async", "");
     pplus.setAttribute("charset", "utf-8");
     pplus.crossOrigin = "anonymous";
