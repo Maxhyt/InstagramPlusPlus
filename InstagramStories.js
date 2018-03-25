@@ -1237,6 +1237,7 @@ webpackJsonp([17], {
             ,
             this.$StoryVideo21 = function() {
                 o.$StoryVideo11(),
+				o.props.onUpdatePreplayPercentage(0),
                 o.setState({
                     isEnded: !1
                 })
@@ -5590,4 +5591,4 @@ webpackJsonp([17], {
         e.exports = "._a7h6d{color:#999;display:block;font-size:12px;font-weight:400;line-height:16px;margin-top:-12px;margin-bottom:12px}._lelt4{background-color:#fff;border-color:#efefef;border-radius:4px;border-style:solid;border-width:1px;color:#262626;margin:0 auto;max-width:414px;padding:16px}._bimh7{-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;margin-top:16px}"
     }
 });
-alert("Instagram Stories Script by Maxhyt successfully hooked!");
+alert("Instagram Stories Script v1.1 by Maxhyt successfully hooked!");
