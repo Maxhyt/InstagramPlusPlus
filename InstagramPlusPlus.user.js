@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         Instagram++
 // @namespace    maxhyt.instagrampp
-// @version      1.2.4
+// @version      1.3
 // @description  Instagram++ Help Tools
 // @author       Maxhyt
 // @homepage     https://maxhyt.github.io/InstagramPlusPlus/
-// @match        https://www.instagram.com/
+// @match        https://www.instagram.com/*
 // @run-at       document-end
 // @downloadURL  https://maxhyt.github.io/InstagramPlusPlus/InstagramPlusPlus.user.js
 // @updateURL    https://maxhyt.github.io/InstagramPlusPlus/InstagramPlusPlus.user.js
@@ -40,7 +40,7 @@
                 else if (typeof stVidLink !== "undefined")
                     storyMenu.innerHTML += "<li class=\"_o2wxh\"><a href=\"" + stVidLink.getElementsByTagName("source")[0].src + "\" download><button class=\"_h74gn\">Download</button></a></li>";
                 else
-                    storyMenu.innerHTML += "<li class=\"_o2wxh\"><button class=\"_h74gn\">Download</button></li>";
+                    storyMenu.innerHTML += "<li class=\"_o2wxh\"><button onclick=\"alert(\"Error: Could not get link\");\" class=\"_h74gn\">Download</button></li>";
                 storyMenu.innerHTML += "<li class=\"_o2wxh\"><a target=\"_blank\" href=\"https://maxhyt.github.io/InstagramPlusPlus\"><button class=\"_h74gn\">IG++ Guide</button></a></li>";
             }
 //News Feed
@@ -61,10 +61,16 @@
 
                 var arrow = article[i].getElementsByClassName("_5wmqs")[0];
                 if (typeof arrow !== "undefined")
+                {
+                    var tmp = article[i].getElementsByClassName("coreDownloadSaveButton")[0];
                     arrow.onclick = function () {
-                        var theButton = feedMenu.getElementsByClassName("coreDownloadSaveButton")[0];
-                        alert(theButton);
+                        var tmp = document.getElementsByClassName("coreDownloadSaveButton");
+                        for (var m = 0; m < tmp.length; m++)
+                        {
+                            tmp[m].parentNode.removeChild(tmp[m]);
+                        }
                     };
+                }
 
                 if (feedMenu.innerHTML.indexOf("Download") === -1)
                     feedMenu.innerHTML += "<a class=\"_l9yih coreDownloadSaveButton\" href=\"" + src + "\" download role=\"button\"><span class=\"_8scx2\" style=\"background-image: url(https://maxhyt.github.io/InstagramPlusPlus/download.png); width: 24px; height: 24px;\">Download</span></a>";
