@@ -86,7 +86,6 @@
                 if (feedMenu.innerHTML.indexOf("Download") === -1)
                     feedMenu.innerHTML += "<a class=\"_l9yih coreDownloadSaveButton\" href=\"" + src + "\" download role=\"button\"><span class=\"_8scx2\" style=\"background-image: url(https://maxhyt.github.io/InstagramPlusPlus/download.png); width: 24px; height: 24px;\">Download</span></a>";
             }
-//TODO: Profile
             dlButton();
         }, 500);
     }
