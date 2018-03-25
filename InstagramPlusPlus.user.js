@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Instagram++
 // @namespace    maxhyt.instagrampp
-// @version      1.3
+// @version      1.3.1
 // @description  Instagram++ Help Tools
 // @author       Maxhyt
 // @homepage     https://maxhyt.github.io/InstagramPlusPlus/
@@ -44,7 +44,7 @@
                 storyMenu.innerHTML += "<li class=\"_o2wxh\"><a target=\"_blank\" href=\"https://maxhyt.github.io/InstagramPlusPlus\"><button class=\"_h74gn\">IG++ Guide</button></a></li>";
             }
 //News Feed
-            var article = document.getElementsByClassName("_s5vjd _622au _5lms4 _8n9ix");
+            var article = document.querySelectorAll("article._622au");
             for (var i = 0; i < article.length; i++)
             {
 
@@ -59,17 +59,28 @@
 
                 var feedMenu = article[i].getElementsByClassName("_hmd6j _8oo9w")[0];
 
-                var arrow = article[i].getElementsByClassName("_5wmqs")[0];
-                if (typeof arrow !== "undefined")
+                var arrowFeed = article[i].getElementsByClassName("_5wmqs")[0];
+                if (typeof arrowFeed !== "undefined")
                 {
-                    var tmp = article[i].getElementsByClassName("coreDownloadSaveButton")[0];
-                    arrow.onclick = function () {
-                        var tmp = document.getElementsByClassName("coreDownloadSaveButton");
-                        for (var m = 0; m < tmp.length; m++)
-                        {
-                            tmp[m].parentNode.removeChild(tmp[m]);
-                        }
-                    };
+                    arrowFeed.onclick = function () { reset(); };
+                }
+
+                var arrowProfile = article[i].getElementsByClassName("_8kphn")[0];
+                if (typeof arrowProfile !== "undefined")
+                {
+                    arrowProfile.onclick = function () { reset(); };
+                }
+
+                var arrowSwitchLeft = document.getElementsByClassName("coreSpriteLeftPaginationArrow")[0];
+                if (typeof arrowSwitchLeft !== "undefined")
+                {
+                    arrowSwitchLeft.onclick = function () { setTimeout(reset, 1500); };
+                }
+
+                var arrowSwitchRight = document.getElementsByClassName("coreSpriteRightPaginationArrow")[0];
+                if (typeof arrowSwitchRight !== "undefined")
+                {
+                    arrowSwitchRight.onclick = function () { setTimeout(reset, 1500); };
                 }
 
                 if (feedMenu.innerHTML.indexOf("Download") === -1)
@@ -78,5 +89,14 @@
 //TODO: Profile
             dlButton();
         }, 500);
+    }
+
+    function reset()
+    {
+        var tmp = document.getElementsByClassName("coreDownloadSaveButton");
+        for (var m = 0; m < tmp.length; m++)
+        {
+            tmp[m].parentNode.removeChild(tmp[m]);
+        }
     }
 })();
