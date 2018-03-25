@@ -64,7 +64,7 @@
                 {
                     arrowFeed.onclick = function () { reset(); };
                 }
-
+//Profile
                 var arrowProfile = article[i].getElementsByClassName("_8kphn")[0];
                 if (typeof arrowProfile !== "undefined")
                 {
