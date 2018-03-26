@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Instagram++
 // @namespace    maxhyt.instagrampp
-// @version      1.3.1
+// @version      1.3.2
 // @description  Instagram++ Help Tools
 // @author       Maxhyt
 // @homepage     https://maxhyt.github.io/InstagramPlusPlus/
@@ -30,7 +30,7 @@
         setTimeout(function () {
 //Story
             var storyMenu = document.getElementsByClassName("_cepxb")[0];
-            if (typeof storyMenu !== "undefined" && storyMenu.innerHTML.indexOf("Download") === -1)
+            if (typeof storyMenu !== "undefined" && storyMenu.innerHTML.indexOf("Download") === -1 && window.location.href.indexOf("stories") !== -1)
             {
                 var stPicLink = document.getElementsByClassName("_ntjhp _ro0gg")[0];
                 var stVidLink = document.getElementsByClassName("_ntjhp  _6kyf0")[0];
@@ -40,7 +40,7 @@
                 else if (typeof stVidLink !== "undefined")
                     storyMenu.innerHTML += "<li class=\"_o2wxh\"><a href=\"" + stVidLink.getElementsByTagName("source")[0].src + "\" download><button class=\"_h74gn\">Download</button></a></li>";
                 else
-                    storyMenu.innerHTML += "<li class=\"_o2wxh\"><button onclick=\"alert(\"Error: Could not get link\");\" class=\"_h74gn\">Download</button></li>";
+                    storyMenu.innerHTML += "<li class=\"_o2wxh\"><button onclick=\"alert('Error: Could not get link');\" class=\"_h74gn\">Download</button></li>";
                 storyMenu.innerHTML += "<li class=\"_o2wxh\"><a target=\"_blank\" href=\"https://maxhyt.github.io/InstagramPlusPlus\"><button class=\"_h74gn\">IG++ Guide</button></a></li>";
             }
 //News Feed
