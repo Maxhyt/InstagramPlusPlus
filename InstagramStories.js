@@ -1,12 +1,14 @@
 webpackJsonp([17], {
-    1183: function(e, t, o) {
+    1180: function(e, t, o) {
         "use strict";
         o.d(t, "a", function() {
             return a
         });
         var n, r, i = o(1), s = (o.n(i),
-        o(958));
-        o(1247);
+        o(949));
+        o(1242);
+
+
         var a = "PREFETCHED_IMAGE"
           , c = new Set;
         function l() {
@@ -99,7 +101,7 @@ webpackJsonp([17], {
         },
         t.b = l
     },
-    1192: function(e, t, o) {
+    1185: function(e, t, o) {
         "use strict";
         o.d(t, "c", function() {
             return n
@@ -110,16 +112,17 @@ webpackJsonp([17], {
         o.d(t, "b", function() {
             return i
         });
-        var n = o(0)(494)
-          , r = o(0)(916)
-          , i = o(0)(835)
+        var n = o(0)(498)
+          , r = o(0)(923)
+          , i = o(0)(839)
     },
-    1246: function(e, t, o) {
+    1241: function(e, t, o) {
         "use strict";
-        var n = o(1183)
+        var n = o(1180)
           , r = o(6)
           , i = o.n(r)
-          , s = o(409)
+          , s = o(405)
+
           , a = o(7);
         function c(e) {
             return e.sidecarChildren && e.sidecarChildren.length ? c(e.sidecarChildren[0]) : e.isVideo ? null : e.src && e.displayResources ? {
@@ -140,22 +143,26 @@ webpackJsonp([17], {
             }
         })(n.b)
     },
-    1247: function(e, t, o) {
+    1242: function(e, t, o) {
         var n = o(2)
-          , r = o(1248);
+          , r = o(1243);
+
         n(r, "is-1063a5cc")
     },
-    1248: function(e, t) {
+    1243: function(e, t) {
         e.exports = "._bqs6b{height:0;visibility:hidden;width:100%}"
     },
-    1376: function(e, t, o) {
+    1372: function(e, t, o) {
+
         "use strict";
-        var n, r, i = o(489), s = o(963), a = o(11), c = o.n(a), l = o(1), p = (o.n(l),
-        o(479));
+        var n, r, i = o(483), s = o(952), a = o(12), c = o.n(a), l = o(1), p = (o.n(l),
+        o(472));
+
         function u() {
             n.apply(this, arguments)
         }
-        o(1377),
+        o(1373),
+
         r = (n = l.Component) && n.prototype,
         Object.assign(u, n),
         u.prototype = Object.create(r),
@@ -176,24 +183,27 @@ webpackJsonp([17], {
         ,
         t.a = u
     },
-    1377: function(e, t, o) {
+    1373: function(e, t, o) {
         var n = o(2)
-          , r = o(1378);
+          , r = o(1374);
+
         n(r, "is-db3a5a9")
     },
-    1378: function(e, t) {
+    1374: function(e, t) {
         e.exports = "._oorvb{height:100%;overflow:hidden;width:100%}"
     },
-    1379: function(e, t, o) {
+    1375: function(e, t, o) {
         "use strict";
         var n = o(6)
           , r = o.n(n)
           , i = o(7)
           , s = o(3)
-          , a = o(548)
+          , a = o(542)
+
           , c = o(1);
         o(25),
-        o(1384);
+        o(1380);
+
         var l = function(e) {
             var t = e.storyViewCount
               , n = e.showCtaUrl
@@ -205,7 +215,7 @@ webpackJsonp([17], {
                 onClick: r
             }, c.createElement("div", {
                 className: "_krjnr"
-            }, o(0)(179)), c.createElement("div", {
+            }, o(0)(182)), c.createElement("div", {
                 className: "coreSpriteChevronDark"
             })), null != t && c.createElement("div", {
                 className: "_fwdpv"
@@ -215,16 +225,21 @@ webpackJsonp([17], {
                 className: "_deo6h"
             }, t)))
         }
-          , p = o(409)
-          , u = o(1192)
-          , d = o(395)
+          , p = o(405)
+          , u = o(1185)
+          , d = o(391)
+
+
+
           , f = o(307)
           , m = o(335)
-          , h = o(396)
+          , h = o(392)
+
           , b = o(99);
         o(25),
-        o(1386);
-        var y = o(0)(1403);
+        o(1382);
+
+        var y = o(0)(1413);
         var v, g, w = Object(i.connect)(function(e, t) {
             var o = t.reelId
               , n = t.itemIndex
@@ -273,8 +288,8 @@ webpackJsonp([17], {
             }, c.createElement("div", {
                 className: "coreSpriteOptionsEllipsisLight"
             })))))
-        }), _ = o(397), x = o(4), k = o.n(x), S = o(238), O = o.n(S), E = o(61), $ = o(18), j = o(60), P = o(953), I = o(306);
-        function R() {
+        }), _ = o(394), x = o(4), k = o.n(x), S = o(237), O = o.n(S), E = o(55), $ = o(18), j = o(60), P = o(944), R = o(306);
+        function I() {
             for (var e, t, n = this, r = arguments.length, i = Array(r), s = 0; s < r; s++)
                 i[s] = arguments[s];
             return e = (t = g.constructor).call.apply(t, [this].concat(i)),
@@ -284,7 +299,7 @@ webpackJsonp([17], {
                 case "GraphTappableHashtag":
                     return null != e.attribution && null != e.customTitle ? c.createElement(a.a, null, c.createElement("div", null, e.customTitle), c.createElement("div", {
                         className: "_o8kmx"
-                    }, e.attribution)) : o(0)(1177);
+                    }, e.attribution)) : o(0)(1185);
                 case "GraphTappableLocation":
                     return o(0)(43);
                 case "GraphTappableMention":
@@ -296,14 +311,15 @@ webpackJsonp([17], {
             e
         }
         o(25),
-        o(1392),
+        o(1388),
+
         v = c.Component,
         g = v && v.prototype,
-        Object.assign(R, v),
-        R.prototype = Object.create(g),
-        R.prototype.constructor = R,
-        R.__superConstructor__ = v,
-        R.prototype.render = function() {
+        Object.assign(I, v),
+        I.prototype = Object.create(g),
+        I.prototype.constructor = I,
+        I.__superConstructor__ = v,
+        I.prototype.render = function() {
             var e = this.props
               , t = e.tappedObject
               , o = e.onTagClick
@@ -326,7 +342,7 @@ webpackJsonp([17], {
             }))
         }
         ;
-        var C, N, M = R;
+        var C, N, M = I;
         function V() {
             for (var e, t, o = this, n = arguments.length, r = Array(n), i = 0; i < n; i++)
                 r[i] = arguments[i];
@@ -338,7 +354,8 @@ webpackJsonp([17], {
             ,
             e
         }
-        o(1394),
+        o(1390),
+
         C = c.Component,
         N = C && C.prototype,
         Object.assign(V, C),
@@ -376,7 +393,7 @@ webpackJsonp([17], {
             }))
         }
         ;
-        var A, T, D = V, B = o(12), z = Object.assign || function(e) {
+        var A, T, D = V, B = o(11), z = Object.assign || function(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var o = arguments[t];
                 for (var n in o)
@@ -451,7 +468,8 @@ webpackJsonp([17], {
                 t.tappableObjectById[o] = z({}, e)
             })
         }
-        o(1390),
+        o(1386),
+
         A = c.Component,
         T = A && A.prototype,
         Object.assign(L, A),
@@ -474,7 +492,8 @@ webpackJsonp([17], {
             return {
                 onTappableClick: function(t) {
                     e({
-                        type: I.n,
+                        type: R.n,
+
                         tappedObjectId: t
                     })
                 },
@@ -483,7 +502,7 @@ webpackJsonp([17], {
                 }
             }
         })(L);
-        function W() {
+        function F() {
             for (var e, t, o = this, n = arguments.length, r = Array(n), i = 0; i < n; i++)
                 r[i] = arguments[i];
             return e = (t = Z.constructor).call.apply(t, [this].concat(r)),
@@ -515,14 +534,15 @@ webpackJsonp([17], {
             ,
             e
         }
-        o(1388),
+        o(1384),
+
         U = c.Component,
         Z = U && U.prototype,
-        Object.assign(W, U),
-        W.prototype = Object.create(Z),
-        W.prototype.constructor = W,
-        W.__superConstructor__ = U,
-        W.prototype.render = function() {
+        Object.assign(F, U),
+        F.prototype = Object.create(Z),
+        F.prototype.constructor = F,
+        F.__superConstructor__ = U,
+        F.prototype.render = function() {
             var e = E.a.bool("stories", "stories_tappable_stickers");
             return c.createElement("div", {
                 className: "_o95x1"
@@ -544,7 +564,7 @@ webpackJsonp([17], {
             }))
         }
         ;
-        var F, H, Y = W, G = o(237), X = o(11), Q = o.n(X), K = o(297), J = o(257), ee = o(994), te = o(560), oe = o(995), ne = o(553), re = Object.assign || function(e) {
+        var W, H, Y = F, G = o(236), X = o(12), Q = o.n(X), K = o(298), J = o(256), ee = o(984), te = o(554), oe = o(985), ne = o(547), re = Object.assign || function(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var o = arguments[t];
                 for (var n in o)
@@ -587,12 +607,12 @@ webpackJsonp([17], {
                 modalType: "options"
             }
         }
-        F = c.Component,
-        H = F && F.prototype,
-        Object.assign(se, F),
+        W = c.Component,
+        H = W && W.prototype,
+        Object.assign(se, W),
         se.prototype = Object.create(H),
         se.prototype.constructor = se,
-        se.__superConstructor__ = F,
+        se.__superConstructor__ = W,
         se.prototype.$StoriesModal2 = function(e) {
             var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
               , o = this.props
@@ -652,14 +672,16 @@ webpackJsonp([17], {
             case "delete":
                 return n.isVideo ? c.createElement(K.a, {
                     title: o(0)(62),
-                    body: o(0)(1020),
-                    confirmLabel: o(0)(968),
+                    body: o(0)(1028),
+
+                    confirmLabel: o(0)(976),
                     onClose: r,
                     onConfirm: this.$StoriesModal1
                 }) : c.createElement(K.a, {
                     title: o(0)(62),
-                    body: o(0)(110),
-                    confirmLabel: o(0)(968),
+                    body: o(0)(111),
+
+                    confirmLabel: o(0)(976),
                     onClose: r,
                     onConfirm: this.$StoriesModal1
                 });
@@ -673,8 +695,9 @@ webpackJsonp([17], {
                 viewportWidth: e.displayProperties.viewportWidth
             }
         })(se), pe = o(30), ue = o.n(pe);
-        o(1396);
-        var de = o(0)(683);
+        o(1392);
+
+        var de = o(0)(687);
         function fe() {
             ae.apply(this, arguments)
         }
@@ -713,8 +736,9 @@ webpackJsonp([17], {
             }))
         }
         ;
-        var me, he, be = fe, ye = o(91), ve = o(958), ge = o(947);
-        o(1400);
+        var me, he, be = fe, ye = o(92), ve = o(949), ge = o(938);
+        o(1396);
+
         var we = 1.3;
         function _e() {
             for (var e, t, o = this, n = arguments.length, r = Array(n), i = 0; i < n; i++)
@@ -770,11 +794,12 @@ webpackJsonp([17], {
             }, r)
         }
         ;
-        var xe, ke, Se = _e, Oe = o(554), Ee = o(128);
+        var xe, ke, Se = _e, Oe = o(548), Ee = o(127);
         function $e() {
             xe.apply(this, arguments)
         }
-        o(1402),
+        o(1398),
+
         ke = (xe = c.Component) && xe.prototype,
         Object.assign($e, xe),
         $e.prototype = Object.create(ke),
@@ -795,8 +820,9 @@ webpackJsonp([17], {
             }))
         }
         ;
-        var je, Pe, Ie = $e, Re = o(203), Ce = o.n(Re), Ne = o(16), Me = o(948);
-        o(1398);
+        var je, Pe, Re = $e, Ie = o(203), Ce = o.n(Ie), Ne = o(16), Me = o(939);
+        o(1394);
+
         var Ve = Ce.a["story-image-duration"].value
           , Ae = Ce.a["story-progressbar-update-tick"].value;
         function Te() {
@@ -904,7 +930,7 @@ webpackJsonp([17], {
             }, c.createElement(Se, {
                 intrinsicDimensions: l.dimensions
             }, function(t) {
-                return c.createElement(a.a, null, !u && c.createElement(Ie, {
+                return c.createElement(a.a, null, !u && c.createElement(Re, {
                     className: t.className,
                     dimensions: l.dimensions,
                     key: "p_" + l.id,
@@ -933,7 +959,7 @@ webpackJsonp([17], {
         ;
         var De, Be, ze = Object(Me.a)(function(e, t) {
             return e.post.id !== t.post.id
-        })(Te), Le = o(94), Ue = o(494), Ze = o.n(Ue), qe = o(90), We = Object.assign || function(e) {
+        })(Te), Le = o(94), Ue = o(488), Ze = o.n(Ue), qe = o(91), Fe = Object.assign || function(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var o = arguments[t];
                 for (var n in o)
@@ -942,7 +968,7 @@ webpackJsonp([17], {
             return e
         }
         ;
-        function Fe(e) {
+        function We(e) {
             if (Array.isArray(e)) {
                 for (var t = 0, o = Array(e.length); t < e.length; t++)
                     o[t] = e[t];
@@ -1013,7 +1039,7 @@ webpackJsonp([17], {
                         throw s
                 }
             }
-            return [].concat(Fe(null != t ? [t] : []), Fe(null != o ? [o] : []), n)
+            return [].concat(We(null != t ? [t] : []), We(null != o ? [o] : []), n)
         }
         ,
         He.prototype.componentDidMount = function() {
@@ -1051,7 +1077,7 @@ webpackJsonp([17], {
                 ref: this.$ResponsiveVideo4,
                 className: o,
                 style: n
-            }) : c.createElement("video", We({
+            }) : c.createElement("video", Fe({
                 ref: this.$ResponsiveVideo4,
                 className: o,
                 style: n
@@ -1088,7 +1114,8 @@ webpackJsonp([17], {
             ,
             e
         }
-        o(1406),
+        o(1402),
+
         Ye = c.Component,
         Ge = Ye && Ye.prototype,
         Object.assign(Qe, Ye),
@@ -1111,7 +1138,7 @@ webpackJsonp([17], {
             })
         }
         ;
-        var Ke, Je, et = Qe, tt = o(408), ot = Object.assign || function(e) {
+        var Ke, Je, et = Qe, tt = o(404), ot = Object.assign || function(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var o = arguments[t];
                 for (var n in o)
@@ -1120,7 +1147,8 @@ webpackJsonp([17], {
             return e
         }
         ;
-        o(1404);
+        o(1400);
+
         var nt = Ce.a["story-image-duration"].value
           , rt = Ce.a["story-progressbar-update-tick"].value;
         function it(e, t) {
@@ -1410,7 +1438,7 @@ webpackJsonp([17], {
             }, c.createElement(Se, {
                 intrinsicDimensions: m.dimensions
             }, function(t) {
-                return c.createElement(a.a, null, c.createElement(Ie, {
+                return c.createElement(a.a, null, c.createElement(Re, {
                     className: t.className,
                     dimensions: m.dimensions,
                     key: "p_" + m.id,
@@ -1517,10 +1545,13 @@ webpackJsonp([17], {
             onUpdatePreplayPercentage: ue.a
         };
         var dt = ut
-          , ft = (o(24),
-        o(1246))
-          , mt = o(1183);
-        o(1408);
+          , ft = (o(23),
+        o(1241))
+          , mt = o(1180);
+        o(1404);
+
+
+
         var ht = "storyMedia";
         function bt(e) {
             return Object(d.j)(r()(e.expiringAt)) ? null : e.isVideo && Object(Ne.b)() ? null : e.src && e.displayResources ? {
@@ -1564,7 +1595,8 @@ webpackJsonp([17], {
         function St() {
             wt.apply(this, arguments)
         }
-        o(1410),
+        o(1406),
+
         gt = (vt = c.PureComponent) && vt.prototype,
         Object.assign(kt, vt),
         kt.prototype = Object.create(gt),
@@ -1632,9 +1664,11 @@ webpackJsonp([17], {
             ,
             e
         }
-        o(71),
+        o(70),
+
         o(25),
-        o(1382),
+        o(1378),
+
         Ot = c.Component,
         Et = Ot && Ot.prototype,
         Object.assign(jt, Ot),
@@ -1668,8 +1702,9 @@ webpackJsonp([17], {
               , $ = e.viewerId
               , j = e.viewerSession
               , P = e.viewportHeight
-              , I = p[n]
-              , R = k.id === r && 0 === n
+              , R = p[n]
+
+              , I = k.id === r && 0 === n
               , C = k.userId === $
               , N = P - Ce.a["story-desktop-margin-top"].value - Ce.a["story-desktop-margin-bottom"].value
               , M = 9 / 16 * N
@@ -1681,7 +1716,7 @@ webpackJsonp([17], {
                 }
             }, i && c.createElement(le, {
                 analyticsContext: t,
-                currentPost: I,
+                currentPost: R,
                 currentReelItemIndex: n,
                 onClose: d,
                 reel: k,
@@ -1706,7 +1741,7 @@ webpackJsonp([17], {
                 style: {
                     height: N
                 }
-            }, !R && c.createElement("button", {
+            }, !I && c.createElement("button", {
                 className: "_x6th4",
                 onClick: v
             }, c.createElement("div", {
@@ -1714,7 +1749,7 @@ webpackJsonp([17], {
             })), c.createElement(dt, {
                 autoPlay: !0,
                 eventZone: Y,
-                isFirstStory: R,
+                isFirstStory: I,
                 isPlaybackDisabled: a,
                 onClose: u,
                 onNext: m,
@@ -1724,7 +1759,8 @@ webpackJsonp([17], {
                 onPrev: v,
                 onUpdatePlayPercentage: g,
                 onUpdatePreplayPercentage: _,
-                post: I,
+                post: R,
+
                 reelId: k.id
             }), c.createElement(xt, null), c.createElement("button", {
                 className: "_j1od1",
@@ -1739,13 +1775,13 @@ webpackJsonp([17], {
             }, c.createElement("span", {
                 className: "_8scx2"
             }, G.a))), c.createElement(l, {
-                storyViewCount: I.storyViewCount,
+                storyViewCount: R.storyViewCount,
                 showCtaUrl: V,
                 onOpenCta: this.$DesktopOwnerStories1
             })))
         }
         ;
-        var Pt, It, Rt = Object(i.connect)(function(e) {
+        var Pt, Rt, It = Object(i.connect)(function(e) {
             var t = Object(d.c)(e);
             return {
                 viewportHeight: e.displayProperties.viewportHeight,
@@ -1765,18 +1801,18 @@ webpackJsonp([17], {
                 onClick: t
             }, c.createElement("div", {
                 className: "_pz0vu"
-            }, o(0)(179)), c.createElement("div", {
+            }, o(0)(182)), c.createElement("div", {
                 className: "coreSpriteChevronDark"
             })) : c.createElement("div", {
                 className: "_5lwd3"
             }, c.createElement("div", {
                 className: "coreSpriteChevronDark _811ee"
-            }), c.createElement("div", null, o(0)(179)))
+            }), c.createElement("div", null, o(0)(182)))
         }
         function Mt() {
             for (var e, t, o = this, n = arguments.length, i = Array(n), s = 0; s < n; s++)
                 i[s] = arguments[s];
-            return e = (t = It.constructor).call.apply(t, [this].concat(i)),
+            return e = (t = Rt.constructor).call.apply(t, [this].concat(i)),
             this.$MobileStoriesFooter1 = function() {
                 o.props.onOpenCta(r()(o.props.ctaUrl))
             }
@@ -1784,13 +1820,15 @@ webpackJsonp([17], {
             e
         }
         o(25),
-        o(1418),
+        o(1414),
+
         o(25),
-        o(1416),
+        o(1412),
+
         Pt = c.Component,
-        It = Pt && Pt.prototype,
+        Rt = Pt && Pt.prototype,
         Object.assign(Mt, Pt),
-        Mt.prototype = Object.create(It),
+        Mt.prototype = Object.create(Rt),
         Mt.prototype.constructor = Mt,
         Mt.__superConstructor__ = Pt,
         Mt.prototype.render = function() {
@@ -1868,7 +1906,7 @@ webpackJsonp([17], {
                 className: "_tocm2"
             }, s && c.createElement("span", {
                 className: "_cio6m"
-            }, o(0)(1403)), c.createElement("a", {
+            }, o(0)(1413)), c.createElement("a", {
                 className: "coreSpriteCloseLight",
                 onClick: a
             }, c.createElement("span", {
@@ -1879,10 +1917,13 @@ webpackJsonp([17], {
                 storyViewCount: v.storyViewCount
             }))
         }
-        o(71),
+        o(70),
+
         o(25),
-        o(1414),
-        o(1420);
+        o(1410),
+        o(1416);
+
+
         var Tt, Dt, Bt = function(e) {
             var t = e.onResumeStorySession;
             return c.createElement("div", {
@@ -1891,12 +1932,13 @@ webpackJsonp([17], {
             })
         }, zt = o(65);
         o(334),
-        o(1422);
+        o(1418);
+
         var Lt = 200
           , Ut = 50
           , Zt = 100
           , qt = 500;
-        function Wt() {
+        function Ft() {
             for (var e, t, o = this, n = arguments.length, i = Array(n), s = 0; s < n; s++)
                 i[s] = arguments[s];
             return e = (t = Dt.constructor).call.apply(t, [this].concat(i)),
@@ -1958,11 +2000,11 @@ webpackJsonp([17], {
         }
         Tt = zt.PureComponent,
         Dt = Tt && Tt.prototype,
-        Object.assign(Wt, Tt),
-        Wt.prototype = Object.create(Dt),
-        Wt.prototype.constructor = Wt,
-        Wt.__superConstructor__ = Tt,
-        Wt.prototype.render = function() {
+        Object.assign(Ft, Tt),
+        Ft.prototype = Object.create(Dt),
+        Ft.prototype.constructor = Ft,
+        Ft.__superConstructor__ = Tt,
+        Ft.prototype.render = function() {
             var e = this.props
               , t = e.isFirstStory
               , o = e.isPreplaying
@@ -1994,7 +2036,7 @@ webpackJsonp([17], {
             }))
         }
         ;
-        var Ft, Ht, Yt = Object(i.connect)(function(e) {
+        var Wt, Ht, Yt = Object(i.connect)(function(e) {
             var t = Object(d.c)(e);
             return {
                 ctaUrl: e.posts.byId.get(t).storyCtaUrl
@@ -2008,18 +2050,19 @@ webpackJsonp([17], {
                     e(Object(P.i)())
                 }
             }
-        })(Wt), Gt = o(62);
+        })(Ft), Gt = o(62);
         o(25),
-        o(1424);
+        o(1420);
+
         var Xt = o(0)(21);
         function Qt() {
-            Ft.apply(this, arguments)
+            Wt.apply(this, arguments)
         }
-        Ht = (Ft = c.PureComponent) && Ft.prototype,
-        Object.assign(Qt, Ft),
+        Ht = (Wt = c.PureComponent) && Wt.prototype,
+        Object.assign(Qt, Wt),
         Qt.prototype = Object.create(Ht),
         Qt.prototype.constructor = Qt,
-        Qt.__superConstructor__ = Ft,
+        Qt.__superConstructor__ = Wt,
         Qt.prototype.render = function() {
             return c.createElement("div", {
                 className: "_rb1hh"
@@ -2036,7 +2079,8 @@ webpackJsonp([17], {
         function to() {
             Kt.apply(this, arguments)
         }
-        o(1412),
+        o(1408),
+
         Jt = (Kt = c.Component) && Kt.prototype,
         Object.assign(to, Kt),
         to.prototype = Object.create(Jt),
@@ -2071,18 +2115,19 @@ webpackJsonp([17], {
               , $ = a[n]
               , j = g.id === r && 0 === n
               , P = g.userId === S
-              , I = E.a.bool("stories", "mobile_auto_play")
-              , R = null;
-            return Gt.f && (R = c.createElement(eo, null),
+              , R = E.a.bool("stories", "mobile_auto_play")
+              , I = null;
+
+            return Gt.f && (I = c.createElement(eo, null),
             Object(Ct.logZeroEvent)({
                 event_name: "story_data_banner_impression"
             })),
             c.createElement("section", {
                 className: Q()(o, "_n3o2r")
-            }, R, c.createElement("div", {
+            }, I, c.createElement("div", {
                 className: "_oha0k"
             }, c.createElement(dt, {
-                autoPlay: I,
+                autoPlay: R,
                 eventZone: Yt,
                 isFirstStory: j,
                 isPlaybackDisabled: s,
@@ -2218,7 +2263,7 @@ webpackJsonp([17], {
               , n = e.isPaused
               , r = e.playPercentage
               , i = e.preplayPercentage
-              , s = Object(Ne.d)() ? ro : Rt
+              , s = Object(Ne.d)() ? ro : It
               , l = this.props.isTransitioning || o || t || !!this.props.tappedObjectId || this.props.shouldShowResumeOverlay;
             return c.createElement(a.a, null, c.createElement(_.a, {
                 target: document,
@@ -2245,7 +2290,7 @@ webpackJsonp([17], {
                 return e.items[e.currentReelItemIndex].id
             };
             return o(e) !== o(t)
-        })(so), po = o(47), uo = o(338), fo = Object.assign || function(e) {
+        })(so), po = o(48), uo = o(337), fo = Object.assign || function(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var o = arguments[t];
                 for (var n in o)
@@ -2254,7 +2299,8 @@ webpackJsonp([17], {
             return e
         }
         ;
-        o(1380);
+        o(1376);
+
         var mo = Ce.a["story-image-duration"].value
           , ho = Ce.a["story-swap-animation-duration"].value
           , bo = {
@@ -2349,7 +2395,7 @@ webpackJsonp([17], {
                 return o
             }(o, ["initialReelIndex", "location", "onPostSeen"]));
             return c.createElement("div", {
-                className: (Object(Ne.d)() ? "_9epk1" : "") + (Object(s.D)() ? " _8j4yj" : "") + (Object(Ne.b)() ? " _psbeo" : "")
+                className: (Object(Ne.d)() ? "_9epk1" : "") + (Object(s.E)() ? " _8j4yj" : "") + (Object(Ne.b)() ? " _psbeo" : "")
             }, c.createElement(uo.TransitionGroup, {
                 className: (Object(Ne.b)() ? "_ni05h" : "") + (Object(Ne.d)() ? " _i2kyq" : "")
             }, c.createElement(uo.CSSTransition, {
@@ -2410,188 +2456,245 @@ webpackJsonp([17], {
             }
         })(wo)
     },
+    1376: function(e, t, o) {
+        var n = o(2)
+          , r = o(1377);
+        n(r, "is-74d3a743")
+    },
+    1377: function(e, t) {
+        e.exports = '@-webkit-keyframes StoriesReel_darken{0%{opacity:0}to{opacity:1}}@keyframes StoriesReel_darken{0%{opacity:0}to{opacity:1}}._9epk1,._psbeo{height:100%;overflow:hidden;width:100%}._9epk1{height:100vh;-webkit-perspective:1000px;perspective:1000px}._9epk1._8j4yj{height:100%}._psbeo{-webkit-perspective:2000px;perspective:2000px}._i2kyq,._ni05h{height:100%;position:relative;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;width:100%}._mydo2,._s7gs2{-webkit-backface-visibility:hidden;backface-visibility:hidden;left:0;margin:0 auto;position:absolute;right:0;top:0;will-change:transform}._oq0v0{border:0;pointer-events:none;-webkit-transform:rotateY(90deg) translateX(50%) rotateY(-90deg) translateX(-50%) rotateY(-90deg);transform:rotateY(90deg) translateX(50%) rotateY(-90deg) translateX(-50%) rotateY(-90deg)}._a16al,._o6lge{-webkit-transform:rotateY(90deg) translateX(50%) rotateY(0deg) translateX(-50%) rotateY(-90deg);transform:rotateY(90deg) translateX(50%) rotateY(0deg) translateX(-50%) rotateY(-90deg)}._a16al{-webkit-transition:-webkit-transform 350ms ease-in-out;transition:transform 350ms ease-in-out;transition:transform 350ms ease-in-out,-webkit-transform 350ms ease-in-out}._o6lge{border:0;pointer-events:none;z-index:1}._mgdfj{-webkit-transform:rotateY(90deg) translateX(50%) rotateY(90deg) translateX(-50%) rotateY(-90deg);transform:rotateY(90deg) translateX(50%) rotateY(90deg) translateX(-50%) rotateY(-90deg);-webkit-transition:-webkit-transform 350ms ease-in-out;transition:transform 350ms ease-in-out;transition:transform 350ms ease-in-out,-webkit-transform 350ms ease-in-out}._i2kyq ._o6lge::after,._ni05h ._o6lge::after{background:-webkit-gradient(linear,right top,left top,from(rgba(0,0,0,.9)),to(transparent));background:-webkit-linear-gradient(right,rgba(0,0,0,.9),transparent);background:linear-gradient(to left,rgba(0,0,0,.9),transparent)}._o7apg{border:0;pointer-events:none;-webkit-transform:rotateY(-90deg) translateX(-50%) rotateY(90deg) translateX(50%) rotateY(90deg);transform:rotateY(-90deg) translateX(-50%) rotateY(90deg) translateX(50%) rotateY(90deg)}._5ey6w,._rllib{-webkit-transform:rotateY(-90deg) translateX(-50%) rotateY(0deg) translateX(50%) rotateY(90deg);transform:rotateY(-90deg) translateX(-50%) rotateY(0deg) translateX(50%) rotateY(90deg)}._rllib{-webkit-transition:-webkit-transform 350ms ease-in-out;transition:transform 350ms ease-in-out;transition:transform 350ms ease-in-out,-webkit-transform 350ms ease-in-out;z-index:1}._5ey6w{border:0;pointer-events:none}._9acxu{-webkit-transform:rotateY(-90deg) translateX(-50%) rotateY(-90deg) translateX(50%) rotateY(90deg);transform:rotateY(-90deg) translateX(-50%) rotateY(-90deg) translateX(50%) rotateY(90deg);-webkit-transition:-webkit-transform 350ms ease-in-out;transition:transform 350ms ease-in-out;transition:transform 350ms ease-in-out,-webkit-transform 350ms ease-in-out;z-index:1}._i2kyq ._5ey6w::after,._ni05h ._5ey6w::after{background:-webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.9)),to(transparent));background:-webkit-linear-gradient(left,rgba(0,0,0,.9),transparent);background:linear-gradient(to right,rgba(0,0,0,.9),transparent)}._ni05h ._o6lge::after{position:absolute}._i2kyq ._o6lge::after,._ni05h ._o6lge::after{-webkit-animation:StoriesReel_darken 200ms ease-in 1;animation:StoriesReel_darken 200ms ease-in 1;content:"";width:100%;z-index:2}._ni05h ._5ey6w::after{position:absolute}._i2kyq ._5ey6w::after,._ni05h ._5ey6w::after{-webkit-animation:StoriesReel_darken 200ms ease-in 1;animation:StoriesReel_darken 200ms ease-in 1;content:"";width:100%;z-index:2}._ni05h ._5ey6w::after,._ni05h ._o6lge::after{bottom:26px;top:82px}._i2kyq ._5ey6w::after,._i2kyq ._o6lge::after{height:100%;left:0;position:absolute;top:0}'
+    },
+    1378: function(e, t, o) {
+        var n = o(2)
+          , r = o(1379);
+        n(r, "is61655c1a")
+    },
+    1379: function(e, t) {
+        e.exports = "._d9zua{border-left:46px solid transparent;border-right:46px solid transparent;-webkit-box-sizing:content-box;box-sizing:content-box;height:100%;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}._d9zua:hover ._j1od1,._d9zua:hover ._x6th4{opacity:1}._2us5i{background:#000;display:inline-block;margin-bottom:26px;position:relative;width:100%}._4ec4z{-webkit-animation-play-state:paused;animation-play-state:paused}._mviq1{margin:12px 0}._j1od1,._t848o,._x6th4{background:0 0;border:0;cursor:pointer;padding:0;margin:16px}._j1od1,._x6th4{display:block;opacity:0;margin-top:-13px;position:absolute;top:50%;-webkit-transition:opacity .1s ease-in;transition:opacity .1s ease-in}._j1od1{right:-62px}._x6th4{left:-62px}._t848o{position:absolute;right:-56px;top:-16px}"
+    },
     1380: function(e, t, o) {
         var n = o(2)
           , r = o(1381);
-        n(r, "is-74d3a743")
+        n(r, "is-41fca382")
+
     },
     1381: function(e, t) {
-        e.exports = '@-webkit-keyframes StoriesReel_darken{0%{opacity:0}to{opacity:1}}@keyframes StoriesReel_darken{0%{opacity:0}to{opacity:1}}._9epk1,._psbeo{height:100%;overflow:hidden;width:100%}._9epk1{height:100vh;-webkit-perspective:1000px;perspective:1000px}._9epk1._8j4yj{height:100%}._psbeo{-webkit-perspective:2000px;perspective:2000px}._i2kyq,._ni05h{height:100%;position:relative;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;width:100%}._mydo2,._s7gs2{-webkit-backface-visibility:hidden;backface-visibility:hidden;left:0;margin:0 auto;position:absolute;right:0;top:0;will-change:transform}._oq0v0{border:0;pointer-events:none;-webkit-transform:rotateY(90deg) translateX(50%) rotateY(-90deg) translateX(-50%) rotateY(-90deg);transform:rotateY(90deg) translateX(50%) rotateY(-90deg) translateX(-50%) rotateY(-90deg)}._a16al,._o6lge{-webkit-transform:rotateY(90deg) translateX(50%) rotateY(0deg) translateX(-50%) rotateY(-90deg);transform:rotateY(90deg) translateX(50%) rotateY(0deg) translateX(-50%) rotateY(-90deg)}._a16al{-webkit-transition:-webkit-transform 350ms ease-in-out;transition:transform 350ms ease-in-out;transition:transform 350ms ease-in-out,-webkit-transform 350ms ease-in-out}._o6lge{border:0;pointer-events:none;z-index:1}._mgdfj{-webkit-transform:rotateY(90deg) translateX(50%) rotateY(90deg) translateX(-50%) rotateY(-90deg);transform:rotateY(90deg) translateX(50%) rotateY(90deg) translateX(-50%) rotateY(-90deg);-webkit-transition:-webkit-transform 350ms ease-in-out;transition:transform 350ms ease-in-out;transition:transform 350ms ease-in-out,-webkit-transform 350ms ease-in-out}._i2kyq ._o6lge::after,._ni05h ._o6lge::after{background:-webkit-gradient(linear,right top,left top,from(rgba(0,0,0,.9)),to(transparent));background:-webkit-linear-gradient(right,rgba(0,0,0,.9),transparent);background:linear-gradient(to left,rgba(0,0,0,.9),transparent)}._o7apg{border:0;pointer-events:none;-webkit-transform:rotateY(-90deg) translateX(-50%) rotateY(90deg) translateX(50%) rotateY(90deg);transform:rotateY(-90deg) translateX(-50%) rotateY(90deg) translateX(50%) rotateY(90deg)}._5ey6w,._rllib{-webkit-transform:rotateY(-90deg) translateX(-50%) rotateY(0deg) translateX(50%) rotateY(90deg);transform:rotateY(-90deg) translateX(-50%) rotateY(0deg) translateX(50%) rotateY(90deg)}._rllib{-webkit-transition:-webkit-transform 350ms ease-in-out;transition:transform 350ms ease-in-out;transition:transform 350ms ease-in-out,-webkit-transform 350ms ease-in-out;z-index:1}._5ey6w{border:0;pointer-events:none}._9acxu{-webkit-transform:rotateY(-90deg) translateX(-50%) rotateY(-90deg) translateX(50%) rotateY(90deg);transform:rotateY(-90deg) translateX(-50%) rotateY(-90deg) translateX(50%) rotateY(90deg);-webkit-transition:-webkit-transform 350ms ease-in-out;transition:transform 350ms ease-in-out;transition:transform 350ms ease-in-out,-webkit-transform 350ms ease-in-out;z-index:1}._i2kyq ._5ey6w::after,._ni05h ._5ey6w::after{background:-webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.9)),to(transparent));background:-webkit-linear-gradient(left,rgba(0,0,0,.9),transparent);background:linear-gradient(to right,rgba(0,0,0,.9),transparent)}._ni05h ._o6lge::after{position:absolute}._i2kyq ._o6lge::after,._ni05h ._o6lge::after{-webkit-animation:StoriesReel_darken 200ms ease-in 1;animation:StoriesReel_darken 200ms ease-in 1;content:"";width:100%;z-index:2}._ni05h ._5ey6w::after{position:absolute}._i2kyq ._5ey6w::after,._ni05h ._5ey6w::after{-webkit-animation:StoriesReel_darken 200ms ease-in 1;animation:StoriesReel_darken 200ms ease-in 1;content:"";width:100%;z-index:2}._ni05h ._5ey6w::after,._ni05h ._o6lge::after{bottom:26px;top:82px}._i2kyq ._5ey6w::after,._i2kyq ._o6lge::after{height:100%;left:0;position:absolute;top:0}'
+        e.exports = "._fwdpv,._nfei5{position:absolute}._nfei5{background:-webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,.35)),to(transparent));background:-webkit-linear-gradient(bottom,rgba(0,0,0,.35),transparent);background:linear-gradient(to top,rgba(0,0,0,.35),transparent);height:150px;pointer-events:none;width:100%;bottom:0;left:0}._fwdpv{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;bottom:20px;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;left:24px}._rf5uz{margin-right:8px}._deo6h{color:#fff;font-size:14px;font-weight:600;line-height:18px}._3apru{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;cursor:pointer;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;font:14px semibold #fff;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-top:auto;padding-bottom:20px}._krjnr{margin-right:10px;pointer-events:auto}"
+
     },
     1382: function(e, t, o) {
         var n = o(2)
           , r = o(1383);
-        n(r, "is61655c1a")
+        n(r, "is-4322a3a8")
+
     },
     1383: function(e, t) {
-        e.exports = "._d9zua{border-left:46px solid transparent;border-right:46px solid transparent;-webkit-box-sizing:content-box;box-sizing:content-box;height:100%;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}._d9zua:hover ._j1od1,._d9zua:hover ._x6th4{opacity:1}._2us5i{background:#000;display:inline-block;margin-bottom:26px;position:relative;width:100%}._4ec4z{-webkit-animation-play-state:paused;animation-play-state:paused}._mviq1{margin:12px 0}._j1od1,._t848o,._x6th4{background:0 0;border:0;cursor:pointer;padding:0;margin:16px}._j1od1,._x6th4{display:block;opacity:0;margin-top:-13px;position:absolute;top:50%;-webkit-transition:opacity .1s ease-in;transition:opacity .1s ease-in}._j1od1{right:-62px}._x6th4{left:-62px}._t848o{position:absolute;right:-56px;top:-16px}"
+        e.exports = "._7pkw3{padding-top:26px;width:100%}._c949z{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;color:#fff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;font-size:14px;font-weight:400;line-height:18px}._9uvd6,._ehcjj{margin-right:10px}._ehcjj,._ehcjj:active,._ehcjj:focus,._ehcjj:hover,._ehcjj:visited{color:#fff}._khevh,._khevh:active,._khevh:focus,._khevh:hover,._khevh:visited{color:#fff;font-size:14px;font-weight:400;line-height:18px;opacity:.5}._2tt3z,._53tkq{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal}._53tkq{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;background:rgba(255,255,255,.2);border-radius:2px;font-size:10px;font-weight:600;height:22px;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;line-height:12px;margin:0 16px;padding:0 6px;text-transform:uppercase;-webkit-box-orient:vertical;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}._2tt3z{margin-left:auto;-webkit-box-orient:horizontal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row}._sqixo{background:0 0;border:0;cursor:pointer;padding:0}"
+
     },
     1384: function(e, t, o) {
         var n = o(2)
           , r = o(1385);
-        n(r, "is-41fca382")
+        n(r, "is1b4c5ce5")
+
     },
     1385: function(e, t) {
-        e.exports = "._fwdpv,._nfei5{position:absolute}._nfei5{background:-webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,.35)),to(transparent));background:-webkit-linear-gradient(bottom,rgba(0,0,0,.35),transparent);background:linear-gradient(to top,rgba(0,0,0,.35),transparent);height:150px;pointer-events:none;width:100%;bottom:0;left:0}._fwdpv{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;bottom:20px;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;left:24px}._rf5uz{margin-right:8px}._deo6h{color:#fff;font-size:14px;font-weight:600;line-height:18px}._3apru{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;cursor:pointer;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;font:14px semibold #fff;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-top:auto;padding-bottom:20px}._krjnr{margin-right:10px;pointer-events:auto}"
+        e.exports = "._o95x1,._v88d1{height:100%;left:0;position:absolute;top:0;width:100%}"
+
     },
     1386: function(e, t, o) {
         var n = o(2)
           , r = o(1387);
-        n(r, "is-4322a3a8")
+        n(r, "is-4292a3a0")
+
     },
     1387: function(e, t) {
-        e.exports = "._7pkw3{padding-top:26px;width:100%}._c949z{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;color:#fff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;font-size:14px;font-weight:400;line-height:18px}._9uvd6,._ehcjj{margin-right:10px}._ehcjj,._ehcjj:active,._ehcjj:focus,._ehcjj:hover,._ehcjj:visited{color:#fff}._khevh,._khevh:active,._khevh:focus,._khevh:hover,._khevh:visited{color:#fff;font-size:14px;font-weight:400;line-height:18px;opacity:.5}._2tt3z,._53tkq{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal}._53tkq{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;background:rgba(255,255,255,.2);border-radius:2px;font-size:10px;font-weight:600;height:22px;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;line-height:12px;margin:0 16px;padding:0 6px;text-transform:uppercase;-webkit-box-orient:vertical;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}._2tt3z{margin-left:auto;-webkit-box-orient:horizontal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row}._sqixo{background:0 0;border:0;cursor:pointer;padding:0}"
+        e.exports = "._npx7y{height:100%;pointer-events:none;position:absolute;width:100%}._12zhb{pointer-events:auto}"
+
     },
     1388: function(e, t, o) {
         var n = o(2)
           , r = o(1389);
-        n(r, "is1b4c5ce5")
+        n(r, "is5ae5baa")
+
     },
     1389: function(e, t) {
-        e.exports = "._o95x1,._v88d1{height:100%;left:0;position:absolute;top:0;width:100%}"
+        e.exports = "@-webkit-keyframes story-tappable-popup{0%{opacity:0;-webkit-transform:translate(-50%,-120%) scale(0);transform:translate(-50%,-120%) scale(0)}to{opacity:1;-webkit-transform:translate(-50%,-120%) scale(1);transform:translate(-50%,-120%) scale(1)}}@keyframes story-tappable-popup{0%{opacity:0;-webkit-transform:translate(-50%,-120%) scale(0);transform:translate(-50%,-120%) scale(0)}to{opacity:1;-webkit-transform:translate(-50%,-120%) scale(1);transform:translate(-50%,-120%) scale(1)}}._m5usv,._n7rgo{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}._m5usv{-webkit-animation:story-tappable-popup .2s cubic-bezier(.16,1.275,.725,1.255);animation:story-tappable-popup .2s cubic-bezier(.16,1.275,.725,1.255);background-color:transparent;border:0;cursor:pointer;margin:0;outline:0;position:absolute;-webkit-transform-origin:bottom center;transform-origin:bottom center;-webkit-transform:translate(-50%,-120%);transform:translate(-50%,-120%);width:100%;z-index:3;-webkit-tap-highlight-color:transparent;-webkit-box-orient:vertical;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:0;pointer-events:none}._n7rgo{background-color:rgba(0,0,0,.85);border-radius:6px;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;-webkit-box-orient:horizontal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;padding:10px;pointer-events:auto}._66s7c{padding-right:10px}._gr8i6{border-left:12px solid transparent;border-right:12px solid transparent;border-top:12px solid rgba(0,0,0,.85);border-style:solid;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;z-index:3;width:0;height:0}._o8kmx{margin-top:5px;font-size:.8em}"
+
     },
     1390: function(e, t, o) {
         var n = o(2)
           , r = o(1391);
-        n(r, "is-4292a3a0")
+        n(r, "is-69f9a634")
+
     },
     1391: function(e, t) {
-        e.exports = "._npx7y{height:100%;pointer-events:none;position:absolute;width:100%}._12zhb{pointer-events:auto}"
+        e.exports = "._2ejl7{position:absolute}._rky3n{cursor:pointer;display:block;background-color:transparent;border:0;height:100%;margin:0;outline:0;padding:0;pointer-events:none;-webkit-tap-highlight-color:transparent;width:100%;z-index:1}._j6j0c{pointer-events:auto}._azzka{background-color:rgba(255,255,0,.5)}"
+
     },
     1392: function(e, t, o) {
         var n = o(2)
           , r = o(1393);
-        n(r, "is5ae5baa")
+        n(r, "is-1aa8a6c2")
+
     },
     1393: function(e, t) {
-        e.exports = "@-webkit-keyframes story-tappable-popup{0%{opacity:0;-webkit-transform:translate(-50%,-120%) scale(0);transform:translate(-50%,-120%) scale(0)}to{opacity:1;-webkit-transform:translate(-50%,-120%) scale(1);transform:translate(-50%,-120%) scale(1)}}@keyframes story-tappable-popup{0%{opacity:0;-webkit-transform:translate(-50%,-120%) scale(0);transform:translate(-50%,-120%) scale(0)}to{opacity:1;-webkit-transform:translate(-50%,-120%) scale(1);transform:translate(-50%,-120%) scale(1)}}._m5usv,._n7rgo{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}._m5usv{-webkit-animation:story-tappable-popup .2s cubic-bezier(.16,1.275,.725,1.255);animation:story-tappable-popup .2s cubic-bezier(.16,1.275,.725,1.255);background-color:transparent;border:0;cursor:pointer;margin:0;outline:0;position:absolute;-webkit-transform-origin:bottom center;transform-origin:bottom center;-webkit-transform:translate(-50%,-120%);transform:translate(-50%,-120%);width:100%;z-index:3;-webkit-tap-highlight-color:transparent;-webkit-box-orient:vertical;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:0;pointer-events:none}._n7rgo{background-color:rgba(0,0,0,.85);border-radius:6px;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;-webkit-box-orient:horizontal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;padding:10px;pointer-events:auto}._66s7c{padding-right:10px}._gr8i6{border-left:12px solid transparent;border-right:12px solid transparent;border-top:12px solid rgba(0,0,0,.85);border-style:solid;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;z-index:3;width:0;height:0}._o8kmx{margin-top:5px;font-size:.8em}"
+        e.exports = "._spt0a{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;height:100%;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;position:relative;width:100%}._r3oay{margin:0 52px}"
+
     },
     1394: function(e, t, o) {
         var n = o(2)
           , r = o(1395);
-        n(r, "is-69f9a634")
+        n(r, "is321f5850")
+
     },
     1395: function(e, t) {
-        e.exports = "._2ejl7{position:absolute}._rky3n{cursor:pointer;display:block;background-color:transparent;border:0;height:100%;margin:0;outline:0;padding:0;pointer-events:none;-webkit-tap-highlight-color:transparent;width:100%;z-index:1}._j6j0c{pointer-events:auto}._azzka{background-color:rgba(255,255,0,.5)}"
+        e.exports = "@-webkit-keyframes StoryImage_slowZoom{0%{-webkit-transform:scale(1);transform:scale(1)}to{-webkit-transform:scale(1.025);transform:scale(1.025)}}@keyframes StoryImage_slowZoom{0%{-webkit-transform:scale(1);transform:scale(1)}to{-webkit-transform:scale(1.025);transform:scale(1.025)}}._te9am{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;position:absolute;top:0;left:0}._8sv9q,._te9am{height:100%;width:100%}._9x4s4{visibility:hidden}._ro0gg{-webkit-animation:StoryImage_slowZoom 5s linear 1;animation:StoryImage_slowZoom 5s linear 1;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}._g9va4{-webkit-animation-play-state:paused;animation-play-state:paused}"
+
     },
     1396: function(e, t, o) {
         var n = o(2)
           , r = o(1397);
-        n(r, "is-1aa8a6c2")
+        n(r, "is4d665acb")
+
     },
     1397: function(e, t) {
-        e.exports = "._spt0a{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;height:100%;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;position:relative;width:100%}._r3oay{margin:0 52px}"
+        e.exports = "._4gv06{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:100%;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;overflow:hidden;width:100%}._jtktu{display:block;-webkit-box-flex:0;-webkit-flex:none;-ms-flex:none;flex:none;position:relative}._ntjhp{display:block;height:100%;left:0;position:absolute;top:0;width:100%}"
+
     },
     1398: function(e, t, o) {
         var n = o(2)
           , r = o(1399);
-        n(r, "is321f5850")
+        n(r, "is-1a46a6b1")
+
     },
     1399: function(e, t) {
-        e.exports = "@-webkit-keyframes StoryImage_slowZoom{0%{-webkit-transform:scale(1);transform:scale(1)}to{-webkit-transform:scale(1.025);transform:scale(1.025)}}@keyframes StoryImage_slowZoom{0%{-webkit-transform:scale(1);transform:scale(1)}to{-webkit-transform:scale(1.025);transform:scale(1.025)}}._te9am{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;position:absolute;top:0;left:0}._8sv9q,._te9am{height:100%;width:100%}._9x4s4{visibility:hidden}._ro0gg{-webkit-animation:StoryImage_slowZoom 5s linear 1;animation:StoryImage_slowZoom 5s linear 1;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}._g9va4{-webkit-animation-play-state:paused;animation-play-state:paused}"
+        e.exports = "._dibpl{display:block}"
+
     },
     1400: function(e, t, o) {
         var n = o(2)
           , r = o(1401);
-        n(r, "is4d665acb")
+        n(r, "is32af5864")
+
     },
     1401: function(e, t) {
-        e.exports = "._4gv06{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:100%;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;overflow:hidden;width:100%}._jtktu{display:block;-webkit-box-flex:0;-webkit-flex:none;-ms-flex:none;flex:none;position:relative}._ntjhp{display:block;height:100%;left:0;position:absolute;top:0;width:100%}"
+        e.exports = "._r1f36{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;height:100%;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;position:absolute;top:0;left:0;width:100%}._t6cht{visibility:hidden}._6kyf0{-o-object-fit:fill;object-fit:fill}._oy6n9{z-index:-1}._6kyf0::-webkit-media-controls{display:none}"
+
     },
     1402: function(e, t, o) {
         var n = o(2)
           , r = o(1403);
-        n(r, "is-1a46a6b1")
+        n(r, "is-5602a4ba")
+
     },
     1403: function(e, t) {
-        e.exports = "._dibpl{display:block}"
+        e.exports = "._32pd9{pointer-events:none}"
+
     },
     1404: function(e, t, o) {
         var n = o(2)
           , r = o(1405);
-        n(r, "is32af5864")
+        n(r, "is-4390a3ab")
+
     },
     1405: function(e, t) {
-        e.exports = "._r1f36{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;height:100%;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;position:absolute;top:0;left:0;width:100%}._t6cht{visibility:hidden}._6kyf0{-o-object-fit:fill;object-fit:fill}._oy6n9{z-index:-1}._6kyf0::-webkit-media-controls{display:none}"
+        e.exports = "._m72dt{bottom:0;left:0;pointer-events:none;position:absolute;right:0;top:0;visibility:hidden}"
+
     },
     1406: function(e, t, o) {
         var n = o(2)
           , r = o(1407);
-        n(r, "is-5602a4ba")
+        n(r, "is-5536a4b6")
+
     },
     1407: function(e, t) {
-        e.exports = "._32pd9{pointer-events:none}"
+        e.exports = "@-webkit-keyframes StoryProgressBars_animateProgressBar{0%{width:0}to{width:100%}}@keyframes StoryProgressBars_animateProgressBar{0%{width:0}to{width:100%}}._ra71m{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;margin-bottom:8px}._rxwbc{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;height:2px;position:relative;margin-right:2px}._rxwbc:last-child{margin-right:0}._ay8ll,._t2gra{border-radius:2px;height:2px;position:absolute;top:0;width:100%}._t2gra{background:rgba(255,255,255,.35)}._ay8ll{background:#fff}._dubon{-webkit-transition:width .1s linear;transition:width .1s linear;width:auto;will-change:width}"
+
     },
     1408: function(e, t, o) {
         var n = o(2)
           , r = o(1409);
-        n(r, "is-4390a3ab")
+        n(r, "is39a5b98")
+
     },
     1409: function(e, t) {
-        e.exports = "._m72dt{bottom:0;left:0;pointer-events:none;position:absolute;right:0;top:0;visibility:hidden}"
+        e.exports = "._n3o2r{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:100%;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:100%}._n3o2r a,._n3o2r a:hover,._n3o2r a:visited{color:#fff}._oha0k{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;position:relative}@media (min-width:736px){._n3o2r{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;max-height:100%;max-width:56.25vh}}"
+
     },
     1410: function(e, t, o) {
         var n = o(2)
           , r = o(1411);
-        n(r, "is-5536a4b6")
+        n(r, "is-6eaba186")
+
     },
     1411: function(e, t) {
-        e.exports = "@-webkit-keyframes StoryProgressBars_animateProgressBar{0%{width:0}to{width:100%}}@keyframes StoryProgressBars_animateProgressBar{0%{width:0}to{width:100%}}._ra71m{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;margin-bottom:8px}._rxwbc{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;height:2px;position:relative;margin-right:2px}._rxwbc:last-child{margin-right:0}._ay8ll,._t2gra{border-radius:2px;height:2px;position:absolute;top:0;width:100%}._t2gra{background:rgba(255,255,255,.35)}._ay8ll{background:#fff}._dubon{-webkit-transition:width .1s linear;transition:width .1s linear;width:auto;will-change:width}"
+        e.exports = "._3o2qb{bottom:0;left:0;pointer-events:none;position:absolute;right:0;top:0;z-index:1}._h2yqm{height:72px}._h2yqm,._hu83h{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-flex:0;-webkit-flex:none;-ms-flex:none;flex:none;width:100%}._h2yqm{background:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.2)),to(transparent));background:-webkit-linear-gradient(top,rgba(0,0,0,.2),transparent);background:linear-gradient(to bottom,rgba(0,0,0,.2),transparent);padding:8px 8px 0;pointer-events:auto}._hu83h{background:-webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,.35)),to(transparent));background:-webkit-linear-gradient(bottom,rgba(0,0,0,.35),transparent);background:linear-gradient(to top,rgba(0,0,0,.35),transparent);height:150px;margin-top:auto;padding:0 16px 8px}._5z3ju{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;margin:0 8px}._2mhax,._o4qjw{margin-right:12px}._d2its{font-weight:400;opacity:.6}._cio6m,._tocm2{margin-left:auto;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row}._cio6m{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;background:rgba(255,255,255,.3);border-radius:2px;-webkit-box-orient:vertical;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;font-size:10px;font-weight:600;height:22px;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;line-height:12px;margin-right:10px;padding:0 6px;text-transform:uppercase}"
+
     },
     1412: function(e, t, o) {
         var n = o(2)
           , r = o(1413);
-        n(r, "is39a5b98")
+        n(r, "is5fb65bfc")
+
     },
     1413: function(e, t) {
-        e.exports = "._n3o2r{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:100%;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:100%}._n3o2r a,._n3o2r a:hover,._n3o2r a:visited{color:#fff}._oha0k{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;position:relative}@media (min-width:736px){._n3o2r{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;max-height:100%;max-width:56.25vh}}"
+        e.exports = "._9y6ft,._hppxq{position:absolute}._9y6ft{pointer-events:auto;right:16px;bottom:16px}._hppxq{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;bottom:20px;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;left:16px}._1ygwz{margin-right:8px}._6d53i{color:#fff;font-size:14px;font-weight:600;line-height:18px}"
+
     },
     1414: function(e, t, o) {
         var n = o(2)
           , r = o(1415);
-        n(r, "is-6eaba186")
+        n(r, "is-6a97a663")
+
     },
     1415: function(e, t) {
-        e.exports = "._3o2qb{bottom:0;left:0;pointer-events:none;position:absolute;right:0;top:0;z-index:1}._h2yqm{height:72px}._h2yqm,._hu83h{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-flex:0;-webkit-flex:none;-ms-flex:none;flex:none;width:100%}._h2yqm{background:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.2)),to(transparent));background:-webkit-linear-gradient(top,rgba(0,0,0,.2),transparent);background:linear-gradient(to bottom,rgba(0,0,0,.2),transparent);padding:8px 8px 0;pointer-events:auto}._hu83h{background:-webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,.35)),to(transparent));background:-webkit-linear-gradient(bottom,rgba(0,0,0,.35),transparent);background:linear-gradient(to top,rgba(0,0,0,.35),transparent);height:150px;margin-top:auto;padding:0 16px 8px}._5z3ju{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;margin:0 8px}._2mhax,._o4qjw{margin-right:12px}._d2its{font-weight:400;opacity:.6}._cio6m,._tocm2{margin-left:auto;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row}._cio6m{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;background:rgba(255,255,255,.3);border-radius:2px;-webkit-box-orient:vertical;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;font-size:10px;font-weight:600;height:22px;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;line-height:12px;margin-right:10px;padding:0 6px;text-transform:uppercase}"
+        e.exports = "@-webkit-keyframes story-cta-swipe{0%{opacity:0;-webkit-transform:translate(-50%,50%);transform:translate(-50%,50%)}to{opacity:1;-webkit-transform:translate(-50%,0%);transform:translate(-50%,0%)}}@keyframes story-cta-swipe{0%{opacity:0;-webkit-transform:translate(-50%,50%);transform:translate(-50%,50%)}to{opacity:1;-webkit-transform:translate(-50%,0%);transform:translate(-50%,0%)}}._5lwd3{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-animation:story-cta-swipe .5s linear;animation:story-cta-swipe .5s linear;bottom:20px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;font:14px semibold #fff;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;left:50%;pointer-events:auto;position:absolute;-webkit-transform:translateX(-50%);transform:translateX(-50%);z-index:1}._811ee{-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}._bwqy3{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;bottom:20px;cursor:pointer;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;font:14px semibold #fff;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;left:50%;pointer-events:auto;position:absolute;-webkit-transform:translateX(-50%);transform:translateX(-50%);z-index:1}._pz0vu{margin-right:10px}"
+
     },
     1416: function(e, t, o) {
         var n = o(2)
           , r = o(1417);
-        n(r, "is5fb65bfc")
+        n(r, "is-f91a120")
+
     },
     1417: function(e, t) {
-        e.exports = "._9y6ft,._hppxq{position:absolute}._9y6ft{pointer-events:auto;right:16px;bottom:16px}._hppxq{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;bottom:20px;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;left:16px}._1ygwz{margin-right:8px}._6d53i{color:#fff;font-size:14px;font-weight:600;line-height:18px}"
+        e.exports = "._ma3rw{background-color:transparent;border:0;height:100%;outline:0;position:absolute;-webkit-tap-highlight-color:transparent;width:100%}"
+
     },
     1418: function(e, t, o) {
         var n = o(2)
           , r = o(1419);
-        n(r, "is-6a97a663")
+        n(r, "is-4391a39d")
+
     },
     1419: function(e, t) {
-        e.exports = "@-webkit-keyframes story-cta-swipe{0%{opacity:0;-webkit-transform:translate(-50%,50%);transform:translate(-50%,50%)}to{opacity:1;-webkit-transform:translate(-50%,0%);transform:translate(-50%,0%)}}@keyframes story-cta-swipe{0%{opacity:0;-webkit-transform:translate(-50%,50%);transform:translate(-50%,50%)}to{opacity:1;-webkit-transform:translate(-50%,0%);transform:translate(-50%,0%)}}._5lwd3{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-animation:story-cta-swipe .5s linear;animation:story-cta-swipe .5s linear;bottom:20px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;font:14px semibold #fff;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;left:50%;pointer-events:auto;position:absolute;-webkit-transform:translateX(-50%);transform:translateX(-50%);z-index:1}._811ee{-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}._bwqy3{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;bottom:20px;cursor:pointer;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;font:14px semibold #fff;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;left:50%;pointer-events:auto;position:absolute;-webkit-transform:translateX(-50%);transform:translateX(-50%);z-index:1}._pz0vu{margin-right:10px}"
+        e.exports = "._82azk,._lzsmj{bottom:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;left:0;position:absolute;right:0;top:0}._gwfsm,._khnd0,._qhksw{background-color:transparent;border:0;margin:0;outline:0;padding:0;-webkit-tap-highlight-color:transparent}._khnd0,._qhksw{height:100%;width:20%}._qhksw{width:80%}._p93fe{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;bottom:0;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;left:0;pointer-events:none;position:absolute;right:0;top:0}._gwfsm{pointer-events:auto;position:static}"
+
     },
     1420: function(e, t, o) {
         var n = o(2)
           , r = o(1421);
-        n(r, "is-f91a120")
+        n(r, "is-2c86a73e")
+
     },
     1421: function(e, t) {
-        e.exports = "._ma3rw{background-color:transparent;border:0;height:100%;outline:0;position:absolute;-webkit-tap-highlight-color:transparent;width:100%}"
-    },
-    1422: function(e, t, o) {
-        var n = o(2)
-          , r = o(1423);
-        n(r, "is-4391a39d")
-    },
-    1423: function(e, t) {
-        e.exports = "._82azk,._lzsmj{bottom:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;left:0;position:absolute;right:0;top:0}._gwfsm,._khnd0,._qhksw{background-color:transparent;border:0;margin:0;outline:0;padding:0;-webkit-tap-highlight-color:transparent}._khnd0,._qhksw{height:100%;width:20%}._qhksw{width:80%}._p93fe{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;bottom:0;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;left:0;pointer-events:none;position:absolute;right:0;top:0}._gwfsm{pointer-events:auto;position:static}"
-    },
-    1424: function(e, t, o) {
-        var n = o(2)
-          , r = o(1425);
-        n(r, "is-2c86a73e")
-    },
-    1425: function(e, t) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         e.exports = "._rb1hh{background-color:#000;height:30px;z-index:1}._hvzmd{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;margin:8px auto 0;width:76px}._3vv5f{height:12px;margin:1px 5px 1px 1px;width:12px}._th5ue{color:#fff;font-size:11px;line-height:13px}"
     },
     1650: function(e, t, o) {
@@ -2602,7 +2705,7 @@ webpackJsonp([17], {
     1651: function(e, t) {
         e.exports = "@-webkit-keyframes fadeIn{0%{opacity:0}to{opacity:1}}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}._hggbb{-webkit-animation:fadeIn cubic-bezier(.445,.05,.55,.95) 1;animation:fadeIn cubic-bezier(.445,.05,.55,.95) 1;-webkit-animation-duration:.75s;animation-duration:.75s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;background:#262626;color:#fff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;opacity:0}"
     },
-    1690: function(e, t, o) {
+    1703: function(e, t, o) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -2610,11 +2713,12 @@ webpackJsonp([17], {
         o.d(t, "PAGE_ID", function() {
             return p
         });
-        var n, r, i = o(1376), s = o(66), a = o(394), c = o(1), l = (o.n(c),
-        o(1379));
+        var n, r, i = o(1372), s = o(66), a = o(390), c = o(1), l = (o.n(c),
+        o(1375));
+
         o(1650);
         var p = s.a.StoriesPage
-          , u = o(0)(262);
+          , u = o(0)(266);
         function d() {
             n.apply(this, arguments)
         }
@@ -2637,7 +2741,8 @@ webpackJsonp([17], {
         ,
         t.default = d
     },
-    270: function(e, t, o) {
+    269: function(e, t, o) {
+
         "use strict";
         t.__esModule = !0,
         t.EXITING = t.ENTERED = t.ENTERING = t.EXITED = t.UNMOUNTED = void 0;
@@ -2653,7 +2758,8 @@ webpackJsonp([17], {
         }(o(44))
           , r = s(o(1))
           , i = s(o(33));
-        o(271);
+        o(270);
+
         function s(e) {
             return e && e.__esModule ? e : {
                 default: e
@@ -2903,7 +3009,8 @@ webpackJsonp([17], {
         d.EXITING = 4,
         t.default = d
     },
-    271: function(e, t, o) {
+    270: function(e, t, o) {
+
         "use strict";
         t.__esModule = !0,
         t.classNamesShape = t.timeoutsShape = void 0,
@@ -2943,8 +3050,10 @@ webpackJsonp([17], {
         "use strict";
         var n = o(330)
           , r = o(332)
-          , i = o(298)
-          , s = o(300);
+          , i = o(299)
+          , s = o(301);
+
+
         function a(e, t, o, n) {
             if (e === o)
                 return !0;
@@ -3348,14 +3457,17 @@ webpackJsonp([17], {
     },
     334: function(e, t, o) {
         var n = o(2)
-          , r = o(558);
-        n(r, "is524378e6")
+          , r = o(552);
+        n(r, "is2345782a")
+
+
     },
-    338: function(e, t, o) {
+    337: function(e, t, o) {
+
         "use strict";
-        var n = s(o(339))
-          , r = s(o(343))
-          , i = s(o(270));
+        var n = s(o(338))
+          , r = s(o(342))
+          , i = s(o(269));
         function s(e) {
             return e && e.__esModule ? e : {
                 default: e
@@ -3367,7 +3479,8 @@ webpackJsonp([17], {
             CSSTransition: n.default
         }
     },
-    339: function(e, t, o) {
+    338: function(e, t, o) {
+
         "use strict";
         t.__esModule = !0;
         var n = Object.assign || function(e) {
@@ -3388,11 +3501,12 @@ webpackJsonp([17], {
             return t.default = e,
             t
         }(o(44))
-          , i = p(o(340))
-          , s = p(o(342))
+          , i = p(o(339))
+          , s = p(o(341))
           , a = p(o(1))
-          , c = p(o(270))
-          , l = o(271);
+          , c = p(o(269))
+          , l = o(270);
+
         function p(e) {
             return e && e.__esModule ? e : {
                 default: e
@@ -3527,7 +3641,8 @@ webpackJsonp([17], {
         t.default = m,
         e.exports = t.default
     },
-    340: function(e, t, o) {
+    339: function(e, t, o) {
+
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -3537,12 +3652,13 @@ webpackJsonp([17], {
             i.default)(e) || (e.className = e.className + " " + t)
         }
         ;
-        var n, r = o(341), i = (n = r) && n.__esModule ? n : {
+        var n, r = o(340), i = (n = r) && n.__esModule ? n : {
             default: n
         };
         e.exports = t.default
     },
-    341: function(e, t, o) {
+    340: function(e, t, o) {
+
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -3553,13 +3669,15 @@ webpackJsonp([17], {
         ,
         e.exports = t.default
     },
-    342: function(e, t, o) {
+    341: function(e, t, o) {
+
         "use strict";
         e.exports = function(e, t) {
             e.classList ? e.classList.remove(t) : e.className = e.className.replace(new RegExp("(^|\\s)" + t + "(?:\\s|$)","g"), "$1").replace(/\s+/g, " ").replace(/^\s*|\s*$/g, "")
         }
     },
-    343: function(e, t, o) {
+    342: function(e, t, o) {
+
         "use strict";
         t.__esModule = !0;
         var n = Object.assign || function(e) {
@@ -3573,7 +3691,8 @@ webpackJsonp([17], {
           , r = c(o(44))
           , i = o(1)
           , s = c(i)
-          , a = o(344);
+          , a = o(343);
+
         function c(e) {
             return e && e.__esModule ? e : {
                 default: e
@@ -3736,7 +3855,8 @@ webpackJsonp([17], {
         t.default = p,
         e.exports = t.default
     },
-    344: function(e, t, o) {
+    343: function(e, t, o) {
+
         "use strict";
         t.__esModule = !0,
         t.getChildMapping = function(e, t) {
@@ -3780,9 +3900,9 @@ webpackJsonp([17], {
         ;
         var n = o(1)
     },
-    397: function(e, t, o) {
+    394: function(e, t, o) {
         "use strict";
-        var n, r, i = o(223), s = o(1);
+        var n, r, i = o(222), s = o(1);
         o.n(s);
         function a() {
             n.apply(this, arguments)
@@ -3830,14 +3950,14 @@ webpackJsonp([17], {
         ,
         t.a = a
     },
-    408: function(e, t, o) {
+    404: function(e, t, o) {
         "use strict";
         t.b = function(e) {
             return e && Number(e.toFixed(2))
         }
         ,
         t.a = function(e, t, o) {
-            if (!Object(n.H)("vl"))
+            if (!Object(n.I)("vl"))
                 return;
             var i = (l = t,
             p = l.ownerId,
@@ -3872,7 +3992,8 @@ webpackJsonp([17], {
         ;
         var n = o(3)
           , r = o(8)
-          , i = o(45)
+          , i = o(46)
+
           , s = o.n(i)
           , a = o(29)
           , c = Object.assign || function(e) {
@@ -3884,30 +4005,32 @@ webpackJsonp([17], {
             return e
         }
     },
-    477: function(e, t, o) {
-        var n = o(496);
+    471: function(e, t, o) {
+        var n = o(490);
         e.exports = function(e) {
             var t = n(e)
               , o = t % 1;
             return t == t ? o ? t - o : t : 0
         }
     },
-    478: function(e, t, o) {
-        var n = o(34)
-          , r = o(35)
-          , i = "[object Symbol]";
-        e.exports = function(e) {
-            return "symbol" == typeof e || r(e) && n(e) == i
-        }
-    },
-    479: function(e, t, o) {
+
+
+
+
+
+
+
+
+    472: function(e, t, o) {
         "use strict";
-        var n = o(398)
-          , r = o(233)
+        var n = o(393)
+          , r = o(232)
+
           , i = o(1)
           , s = (o.n(i),
         o(7));
-        o(480);
+        o(474);
+
         t.a = Object(s.connect)(function(e) {
             return {
                 isRouteLoading: Object(r.b)(e)
@@ -3918,24 +4041,37 @@ webpackJsonp([17], {
             }) : null
         })
     },
-    480: function(e, t, o) {
+    473: function(e, t, o) {
+        var n = o(34)
+          , r = o(35)
+          , i = "[object Symbol]";
+        e.exports = function(e) {
+            return "symbol" == typeof e || r(e) && n(e) == i
+        }
+    },
+    474: function(e, t, o) {
         var n = o(2)
-          , r = o(481);
+          , r = o(475);
+
         n(r, "is1f0c5bcf")
     },
-    481: function(e, t) {
+    475: function(e, t) {
         e.exports = "._72fik{left:0;position:fixed;right:0;top:0;z-index:12}"
     },
-    489: function(e, t, o) {
+    483: function(e, t, o) {
+
         "use strict";
         var n = o(10)
           , r = (o.n(n),
-        o(11))
+        o(12))
+
           , i = o.n(r)
-          , s = o(124)
+          , s = o(123)
+
           , a = o(1);
         o.n(a);
-        o(490),
+        o(484),
+
         t.a = function(e) {
             var t = e.children
               , o = e.className
@@ -3947,22 +4083,25 @@ webpackJsonp([17], {
             }, t, r)
         }
     },
-    490: function(e, t, o) {
+    484: function(e, t, o) {
+
         var n = o(2)
-          , r = o(491);
+          , r = o(485);
+
         n(r, "is-28aea841")
     },
-    491: function(e, t) {
+    485: function(e, t) {
         e.exports = ""
     },
-    494: function(e, t, o) {
-        var n = o(495);
+    488: function(e, t, o) {
+        var n = o(489);
         e.exports = function(e) {
             return n(2, e)
         }
     },
-    495: function(e, t, o) {
-        var n = o(477)
+    489: function(e, t, o) {
+
+        var n = o(471)
           , r = "Expected a function";
         e.exports = function(e, t) {
             var o;
@@ -3976,17 +4115,19 @@ webpackJsonp([17], {
             }
         }
     },
-    496: function(e, t, o) {
-        var n = o(497)
+    490: function(e, t, o) {
+
+        var n = o(491)
           , r = 1 / 0
           , i = 1.7976931348623157e308;
         e.exports = function(e) {
             return e ? (e = n(e)) === r || e === -r ? (e < 0 ? -1 : 1) * i : e == e ? e : 0 : 0 === e ? e : 0
         }
     },
-    497: function(e, t, o) {
+    491: function(e, t, o) {
         var n = o(51)
-          , r = o(478)
+          , r = o(473)
+
           , i = NaN
           , s = /^\s+|\s+$/g
           , a = /^[-+]0x[0-9a-f]+$/i
@@ -4009,16 +4150,20 @@ webpackJsonp([17], {
             return o || l.test(e) ? p(e.slice(2), o ? 2 : 8) : a.test(e) ? i : +e
         }
     },
-    548: function(e, t, o) {
+    542: function(e, t, o) {
+
         "use strict";
-        t.a = function(e) {
-            return e.children
-        }
-        ;
+
+
+
+
         var n = o(1);
-        o.n(n)
+        o.n(n);
+        t.a = n.Fragment
+
     },
-    554: function(e, t, o) {
+    548: function(e, t, o) {
+
         "use strict";
         var n = o(10)
           , r = function() {
@@ -4054,9 +4199,11 @@ webpackJsonp([17], {
           , i = "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsaGikdKUEmJkFCLy8vQkc/Pj4/R0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0cBHSkpNCY0PygoP0c/NT9HR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR//AABEIABQAKgMBIgACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AA==";
         var s = o(4)
           , a = o.n(s)
-          , c = o(413)
+          , c = o(409)
+
           , l = o.n(c)
-          , p = o(557)
+          , p = o(551)
+
           , u = o.n(p)
           , d = Object.assign || function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -4121,7 +4268,8 @@ webpackJsonp([17], {
             },
             this.$PreviewPhoto4()
         }
-        o(555),
+        o(549),
+
         h = g.PureComponent,
         b = h && h.prototype,
         Object.assign(_, h),
@@ -4226,15 +4374,16 @@ webpackJsonp([17], {
         };
         t.a = _
     },
-    555: function(e, t, o) {
+    549: function(e, t, o) {
         var n = o(2)
-          , r = o(556);
+          , r = o(550);
+
         n(r, "is-35cea869")
     },
-    556: function(e, t) {
+    550: function(e, t) {
         e.exports = "._pe7i9{display:block;width:100%;height:100%}"
     },
-    557: function(e, t) {
+    551: function(e, t) {
         var o = [512, 512, 456, 512, 328, 456, 335, 512, 405, 328, 271, 456, 388, 335, 292, 512, 454, 405, 364, 328, 298, 271, 496, 456, 420, 388, 360, 335, 312, 292, 273, 512, 482, 454, 428, 405, 383, 364, 345, 328, 312, 298, 284, 271, 259, 496, 475, 456, 437, 420, 404, 388, 374, 360, 347, 335, 323, 312, 302, 292, 282, 273, 265, 512, 497, 482, 468, 454, 441, 428, 417, 405, 394, 383, 373, 364, 354, 345, 337, 328, 320, 312, 305, 298, 291, 284, 278, 271, 265, 259, 507, 496, 485, 475, 465, 456, 446, 437, 428, 420, 412, 404, 396, 388, 381, 374, 367, 360, 354, 347, 341, 335, 329, 323, 318, 312, 307, 302, 297, 292, 287, 282, 278, 273, 269, 265, 261, 512, 505, 497, 489, 482, 475, 468, 461, 454, 447, 441, 435, 428, 422, 417, 411, 405, 399, 394, 389, 383, 378, 373, 368, 364, 359, 354, 350, 345, 341, 337, 332, 328, 324, 320, 316, 312, 309, 305, 301, 298, 294, 291, 287, 284, 281, 278, 274, 271, 268, 265, 262, 259, 257, 507, 501, 496, 491, 485, 480, 475, 470, 465, 460, 456, 451, 446, 442, 437, 433, 428, 424, 420, 416, 412, 408, 404, 400, 396, 392, 388, 385, 381, 377, 374, 370, 367, 363, 360, 357, 354, 350, 347, 344, 341, 338, 335, 332, 329, 326, 323, 320, 318, 315, 312, 310, 307, 304, 302, 299, 297, 294, 292, 289, 287, 285, 282, 280, 278, 275, 273, 271, 269, 267, 265, 263, 261, 259]
           , n = [9, 11, 12, 13, 13, 14, 14, 15, 15, 15, 15, 16, 16, 16, 16, 17, 17, 17, 17, 17, 17, 17, 18, 18, 18, 18, 18, 18, 18, 18, 18, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24];
         function r() {
@@ -4246,8 +4395,8 @@ webpackJsonp([17], {
         }
         e.exports = function(e, t, i, s) {
             if (!(isNaN(s) || s < 1)) {
-                var a, c, l, p, u, d, f, m, h, b, y, v, g, w, _, x, k, S, O, E, $, j, P, I, R = (s |= 0) + s + 1, C = t - 1, N = i - 1, M = s + 1, V = M * (M + 1) / 2, A = new r, T = A;
-                for (l = 1; l < R; l++)
+                var a, c, l, p, u, d, f, m, h, b, y, v, g, w, _, x, k, S, O, E, $, j, P, R, I = (s |= 0) + s + 1, C = t - 1, N = i - 1, M = s + 1, V = M * (M + 1) / 2, A = new r, T = A;
+                for (l = 1; l < I; l++)
                     if (T = T.next = new r,
                     l == M)
                         var D = T;
@@ -4276,10 +4425,10 @@ webpackJsonp([17], {
                         T = T.next;
                     for (l = 1; l < M; l++)
                         p = d + ((C < l ? C : l) << 2),
-                        m += (T.r = E = e[p]) * (I = M - l),
-                        h += (T.g = $ = e[p + 1]) * I,
-                        b += (T.b = j = e[p + 2]) * I,
-                        y += (T.a = P = e[p + 3]) * I,
+                        m += (T.r = E = e[p]) * (R = M - l),
+                        h += (T.g = $ = e[p + 1]) * R,
+                        b += (T.b = j = e[p + 2]) * R,
+                        y += (T.a = P = e[p + 3]) * R,
                         x += E,
                         k += $,
                         S += j,
@@ -4339,10 +4488,10 @@ webpackJsonp([17], {
                     for (u = t,
                     l = 1; l <= s; l++)
                         d = u + a << 2,
-                        m += (T.r = E = e[d]) * (I = M - l),
-                        h += (T.g = $ = e[d + 1]) * I,
-                        b += (T.b = j = e[d + 2]) * I,
-                        y += (T.a = P = e[d + 3]) * I,
+                        m += (T.r = E = e[d]) * (R = M - l),
+                        h += (T.g = $ = e[d + 1]) * R,
+                        b += (T.b = j = e[d + 2]) * R,
+                        y += (T.a = P = e[d + 3]) * R,
                         x += E,
                         k += $,
                         S += j,
@@ -4386,43 +4535,43 @@ webpackJsonp([17], {
             }
         }
     },
-    558: function(e, t) {
+    552: function(e, t) {
         e.exports = ".videoSpritePlayButton,.videoSpriteSoundOff,.videoSpriteSoundOn{background-image:url(/static/bundles/base/sprite_video.png/0df868727926.png);background-repeat:no-repeat;background-position:0 0;height:135px;width:135px}.videoSpriteSoundOff,.videoSpriteSoundOn{background-position:-137px 0;height:13px;width:16px}.videoSpriteSoundOn{background-position:-137px -15px}@media (min-device-pixel-ratio:1.5),(-webkit-min-device-pixel-ratio:1.5),(min-resolution:144dpi){.videoSpritePlayButton,.videoSpriteSoundOff,.videoSpriteSoundOn{background-image:url(/static/bundles/base/sprite_video_2x.png/06390c4e5e96.png);background-size:152px 135px;background-position:0 0}.videoSpriteSoundOff,.videoSpriteSoundOn{background-position:-136px 0}.videoSpriteSoundOn{background-position:-136px -14px}}"
     },
     65: function(e, t, o) {
         e.exports = o(1)
     },
-    942: function(e, t, o) {
+    933: function(e, t, o) {
         "use strict";
-        var n, r, i = o(963), s = o(235), a = o(1);
-        o.n(a);
-        function c() {
-            n.apply(this, arguments)
-        }
-        o(977),
-        r = (n = a.Component) && n.prototype,
-        Object.assign(c, n),
-        c.prototype = Object.create(r),
-        c.prototype.constructor = c,
-        c.__superConstructor__ = n,
-        c.prototype.componentDidMount = function() {
-            Object(i.a)()
-        }
-        ,
-        c.prototype.render = function() {
-            return a.createElement(s.a, {
-                className: this.props.className,
-                contentClassName: "_kg3s8",
-                hideCloseButton: !0,
-                onClose: this.props.onClose
-            }, this.props.children)
-        }
-        ,
-        t.a = c
-    },
-    943: function(e, t, o) {
-        "use strict";
-        var n, r, i = o(11), s = o.n(i), a = o(1), c = (o.n(a),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        var n, r, i = o(12), s = o.n(i), a = o(1), c = (o.n(a),
         Object.assign || function(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var o = arguments[t];
@@ -4435,7 +4584,8 @@ webpackJsonp([17], {
         function l() {
             n.apply(this, arguments)
         }
-        o(970),
+        o(957),
+
         r = (n = a.Component) && n.prototype,
         Object.assign(l, n),
         l.prototype = Object.create(r),
@@ -4457,14 +4607,43 @@ webpackJsonp([17], {
         ,
         t.a = l
     },
-    946: function(e, t, o) {
+    934: function(e, t, o) {
         "use strict";
-        var n, r, i = o(11), s = o.n(i), a = o(943), c = o(1);
+        var n, r, i = o(952), s = o(234), a = o(1);
+        o.n(a);
+        function c() {
+            n.apply(this, arguments)
+        }
+        o(963),
+        r = (n = a.Component) && n.prototype,
+        Object.assign(c, n),
+        c.prototype = Object.create(r),
+        c.prototype.constructor = c,
+        c.__superConstructor__ = n,
+        c.prototype.componentDidMount = function() {
+            Object(i.a)()
+        }
+        ,
+        c.prototype.render = function() {
+            return a.createElement(s.a, {
+                className: this.props.className,
+                contentClassName: "_kg3s8",
+                hideCloseButton: !0,
+                onClose: this.props.onClose
+            }, this.props.children)
+        }
+        ,
+        t.a = c
+    },
+    935: function(e, t, o) {
+        "use strict";
+        var n, r, i = o(12), s = o.n(i), a = o(933), c = o(1);
         o.n(c);
         function l() {
             n.apply(this, arguments)
         }
-        o(968),
+        o(955),
+
         r = (n = c.Component) && n.prototype,
         Object.assign(l, n),
         l.prototype = Object.create(r),
@@ -4493,14 +4672,14 @@ webpackJsonp([17], {
         }
         ,
         l.defaultProps = {
-            closeLabel: o(0)(998)
+            closeLabel: o(0)(1006)
         },
         t.a = l
     },
-    947: function(e, t, o) {
+    938: function(e, t, o) {
         "use strict";
-        var n, r, i = o(90), s = o(10), a = (o.n(s),
-        o(328)), c = o.n(a), l = o(11), p = o.n(l), u = o(975), d = o.n(u), f = o(1), m = (o.n(f),
+        var n, r, i = o(91), s = o(10), a = (o.n(s),
+        o(328)), c = o.n(a), l = o(12), p = o.n(l), u = o(968), d = o.n(u), f = o(1), m = (o.n(f),
         Object.assign || function(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var o = arguments[t];
@@ -4510,7 +4689,8 @@ webpackJsonp([17], {
             return e
         }
         );
-        o(973);
+        o(966);
+
         var h = c.a.isBrowser("IE") && s.canUseDOM && "onresize"in document.createElement("div")
           , b = {
             attributes: !0,
@@ -4615,7 +4795,7 @@ webpackJsonp([17], {
         ,
         t.a = y
     },
-    948: function(e, t, o) {
+    939: function(e, t, o) {
         "use strict";
         t.a = function(e) {
             return function(t) {
@@ -4669,7 +4849,8 @@ webpackJsonp([17], {
             }
         }
         ;
-        var n = o(92)
+        var n = o(73)
+
           , r = o(1)
           , i = (o.n(r),
         Object.assign || function(e) {
@@ -4688,7 +4869,7 @@ webpackJsonp([17], {
             return o
         }
     },
-    953: function(e, t, o) {
+    944: function(e, t, o) {
         "use strict";
         t.j = function(e, t) {
             return function(o, r) {
@@ -4696,16 +4877,17 @@ webpackJsonp([17], {
                   , s = d()(i.posts.byId.get(t))
                   , a = d()(i.stories.reels).get(e)
                   , c = a.itemIds
-                  , l = y.a.getData()
-                  , p = Object(h.c)(i.relationships, a.userId);
-                return Object(y.b)({
+                  , l = b.a.getData()
+                  , p = d()(s.owner).id
+                  , u = Object(m.c)(i.relationships, p);
+                return Object(b.b)({
                     event_name: "instagram_organic_impression",
                     containermodule: l.containermodule,
                     source_of_action: l.containermodule,
-                    media_key: s.id + "_" + a.userId,
+                    media_key: s.id + "_" + p,
                     media_type: s.isVideo ? "2" : "1",
                     ig_userid: d()(i.users.viewerId),
-                    follow_status: Object(h.b)(p),
+                    follow_status: Object(m.b)(u),
                     tray_session_id: i.stories.traySession,
                     viewer_session_id: i.stories.viewerSession,
                     session_reel_counter: l.reelCounter,
@@ -4715,70 +4897,78 @@ webpackJsonp([17], {
                     reel_start_position: l.initialReelIndex
                 }),
                 null != a.seen && null != s.postedAt && s.postedAt < a.seen ? Promise.resolve({}) : (o({
-                    type: v.c,
+                    type: y.c,
+
                     reelId: e,
                     reelMediaLastSeen: d()(s.postedAt)
                 }),
-                f.a.bool("stories", "dev_write_seen_data") ? Object(b.a)(Object(n.P)(s, a)) : Promise.resolve({}))
+                f.a.bool("stories", "dev_write_seen_data") ? Object(h.a)(Object(n.Q)(s, a)) : Promise.resolve({}))
             }
         }
         ,
         t.g = function(e) {
-            return j(!1, e)
+            return $(!1, e)
         }
         ,
         t.d = function(e) {
-            return j(!0, e)
+            return $(!0, e)
         }
         ,
-        t.a = N,
+        t.a = C,
+
         t.f = function(e, t, o, n) {
             return function(i, s) {
-                Object(g.c)(function() {
+                Object(v.c)(function() {
                     return i({
-                        type: v.l
+                        type: y.l
+
                     })
                 }, function() {
-                    return i(T())
+                    return i(A())
+
                 });
                 var a = s()
                   , c = o || e.first().id
-                  , l = d()(Object(w.h)(a, c));
-                if (Object(w.j)(l.expiringAt))
+                  , l = d()(Object(g.h)(a, c));
+                if (Object(g.j)(l.expiringAt))
                     return i({
-                        type: v.p,
+                        type: y.p,
+
                         date: Date.now()
                     }),
                     Promise.resolve();
-                var u = !Object(w.k)(l)
+                var u = !Object(g.k)(l)
                   , f = a.users.viewerId === l.userId
                   , m = l.muted
                   , h = f || m
-                  , b = h ? [c] : e.filter(function(e) {
-                    return !u || !Object(w.k)(e)
+                  , w = h ? [c] : e.filter(function(e) {
+                    return !u || !Object(g.k)(e)
                 }).map(function(e) {
                     return e.id
                 }).toArray();
                 i({
-                    type: v.o,
-                    trayLoadingId: Object(w.m)(a, c) ? c : null,
+                    type: y.o,
+
+                    trayLoadingId: Object(g.m)(a, c) ? c : null,
                     sourceElementId: n,
-                    trayOrder: b
+                    trayOrder: w
+
                 });
-                var _ = i(A(c));
+                var _ = i(V(c));
                 return _.then(function() {
                     var e = s();
-                    i($(c, Object(w.f)(e, c)));
+                    i(E(c, Object(g.f)(e, c)));
                     var o = e.stories.reels.get(c);
-                    if (!Object(w.p)(o))
+                    if (!Object(g.p)(o))
                         return i(Object(p.h)()),
-                        void i(P());
-                    var n = Object(k.a)(s(), c)
-                      , a = Object(w.i)(e)
+                        void i(j());
+
+                    var n = Object(x.a)(s(), c)
+                      , a = Object(g.i)(e)
                       , l = d()(e.users.viewerId)
                       , u = null;
                     null != a && (u = e.stories.feedTray && e.stories.feedTray.count() - a),
-                    Object(y.b)(S({
+                    Object(b.b)(k({
                         event_name: "reel_playback_entry",
                         containermodule: t,
                         source_of_action: t,
@@ -4787,7 +4977,7 @@ webpackJsonp([17], {
                         tray_session_id: e.stories.traySession,
                         viewer_session_id: e.stories.viewerSession,
                         media_author: n.id,
-                        has_my_reel: d()(Object(w.o)(e, l))
+                        has_my_reel: d()(Object(g.o)(e, l))
                     }, null != a && null != u ? {
                         viewed_reel_count: a,
                         new_reel_count: u
@@ -4803,123 +4993,150 @@ webpackJsonp([17], {
         t.h = function() {
             return function(e, t) {
                 e({
-                    type: v.i
+                    type: y.i
+
                 });
                 var o = t()
-                  , r = d()(Object(k.d)(o))
+                  , r = d()(Object(x.d)(o))
                   , i = Date.now();
-                return Object(b.a)(Object(n.O)(E, {
+                return Object(h.a)(Object(n.P)(O, {
                     only_stories: !0
                 }).then(function(t) {
                     var n = d()(d()(t.data).user)
                       , s = [];
-                    if (null != n.feed_reels_tray && (s = d()(n.feed_reels_tray).edge_reels_tray_to_reel.edges.map(function(e) {
+                    null != n.feed_reels_tray && (s = d()(n.feed_reels_tray).edge_reels_tray_to_reel.edges.map(function(e) {
                         var t = e.node;
                         return t
                     })),
                     e({
-                        type: v.g,
+                        type: y.g,
+
                         reelsTray: s
-                    }),
-                    Object(m.q)({
-                        silent: !0
-                    })) {
-                        var a = d()(Object(w.i)(o))
-                          , c = d()(o.stories.feedTray).count() - a
-                          , p = d()(Object(w.o)(o, r.id));
-                        Object(y.b)({
-                            event_name: "reel_tray_refresh",
-                            containermodule: "feed_timeline",
-                            source_of_action: "feed_timeline",
-                            tray_refresh_time: Object(l.a)(Date.now() - i),
-                            tray_refresh_type: "local_change",
-                            tray_session_id: o.stories.traySession,
-                            has_my_reel: p,
-                            new_reel_count: c,
-                            viewed_reel_count: a,
-                            was_successful: !0
-                        })
-                    }
+                    });
+
+
+
+
+                    var a = d()(Object(g.i)(o))
+                      , c = d()(o.stories.feedTray).count() - a
+                      , p = d()(Object(g.o)(o, r.id));
+                    Object(b.b)({
+                        event_name: "reel_tray_refresh",
+                        containermodule: "feed_timeline",
+                        source_of_action: "feed_timeline",
+                        tray_refresh_time: Object(l.a)(Date.now() - i),
+                        tray_refresh_type: "local_change",
+                        tray_session_id: o.stories.traySession,
+                        has_my_reel: p,
+                        new_reel_count: c,
+                        viewed_reel_count: a,
+                        was_successful: !0
+                    })
+
                 }, function(t) {
                     e({
-                        type: v.h
+                        type: y.h
+
                     }),
-                    t instanceof s.a && t.statusCode && Object(x.a)("[GraphQL] AjaxError: (" + E + ") " + String(t.networkError) + "; " + String(t.statusCode) + "; " + String(t.responseText))
+                    t instanceof s.a && t.statusCode && Object(_.a)("[GraphQL] AjaxError: (" + O + ") " + String(t.networkError) + "; " + String(t.statusCode) + "; " + String(t.responseText))
                 }))
             }
         }
         ,
         t.b = function(e) {
             return {
-                type: v.k,
+                type: y.k,
+
                 reelId: e
             }
         }
         ,
         t.i = function() {
             return function(e) {
-                Object(g.c)(function() {
+                Object(v.c)(function() {
                     return e({
-                        type: v.l
+                        type: y.l
+
                     })
                 }, function() {
-                    return e(T())
+                    return e(A())
+
                 }),
                 e({
-                    type: v.m
+                    type: y.m
+
                 })
             }
         }
         ,
-        t.c = D,
+        t.c = T,
+
         t.e = function(e, t) {
             return function(o, n) {
                 var r = n()
-                  , i = d()(Object(w.h)(r, d()(r.stories.currentReelId)))
-                  , s = Object(h.c)(r.relationships, i.userId)
-                  , a = Object(w.c)(r)
-                  , c = r.posts.byId.get(a)
-                  , p = y.a.getData();
-                Object(y.b)({
+                  , i = Object(g.c)(r)
+                  , s = r.posts.byId.get(i)
+                  , a = d()(s.owner).id
+                  , c = Object(m.c)(r.relationships, a)
+
+
+
+                  , p = b.a.getData();
+                Object(b.b)({
                     event_name: "instagram_organic_action",
                     ig_userid: d()(r.users.viewerId),
                     tray_session_id: r.stories.traySession,
                     viewer_session_id: r.stories.viewerSession,
-                    media_author: i.userId,
-                    media_key: c.id,
-                    media_type: c.isVideo ? "2" : "1",
+                    media_author: a,
+                    media_key: s.id,
+                    media_type: s.isVideo ? "2" : "1",
                     source_of_action: t,
-                    follow_status: Object(h.b)(s),
+                    follow_status: Object(m.b)(c),
                     time_elapsed: Object(l.a)(p.mediaTotalTime - p.mediaPauseTime),
                     time_remaining: Object(l.a)(Math.max(p.mediaDuration - p.mediaTotalTime, 0))
                 }),
                 window.open(e, "_blank"),
-                o(D())
+                o(T())
+
             }
         }
         ;
-        var n = o(73)
+        var n = o(71)
+
           , r = o(18)
-          , i = o(237)
+          , i = o(236)
+
           , s = o(13)
           , a = o(4)
           , c = o.n(a)
-          , l = o(587)
-          , p = o(236)
+          , l = o(581)
+          , p = o(235)
+
+
           , u = o(6)
           , d = o.n(u)
-          , f = o(61)
-          , m = o(118)
-          , h = o(299)
-          , b = o(26)
-          , y = o(553)
-          , v = o(306)
-          , g = o(586)
-          , w = o(395)
-          , _ = o(16)
-          , x = o(12)
-          , k = o(99)
-          , S = Object.assign || function(e) {
+          , f = o(55)
+          , m = o(300)
+          , h = o(26)
+          , b = o(547)
+          , y = o(306)
+          , v = o(580)
+          , g = o(391)
+          , w = o(16)
+          , _ = o(11)
+          , x = o(99)
+
+
+
+
+
+
+
+
+
+
+
+          , k = Object.assign || function(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var o = arguments[t];
                 for (var n in o)
@@ -4927,36 +5144,41 @@ webpackJsonp([17], {
             }
             return e
         }
-          , O = "bf41e22b1c4ba4c9f31b844ebb7d9056"
-          , E = "d15efd8c0c5b23f0ef71f18bf363c704";
-        function $(e, t) {
+          , S = "ef03412811e5127d11e0cbff7a0e758b"
+          , O = "60b755363b5c230111347a7a4e242001";
+
+
+        function E(e, t) {
             return {
-                type: v.j,
+                type: y.j,
+
                 reelId: e,
                 reelMediaIndex: t
             }
         }
-        function j() {
+        function $() {
+
             var e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0]
               , t = arguments[1];
             return function(o, n) {
                 var r = n()
-                  , i = Object(w.d)(r);
-                o(I(Object(w.a)(r, i, e), t))
+                  , i = Object(g.d)(r);
+                o(P(Object(g.a)(r, i, e), t))
             }
         }
-        function P() {
+        function j() {
+
             var e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
             return function(t, o) {
                 var n = o()
-                  , r = Object(w.d)(n);
-                t(I(Object(w.b)(n, r, e)))
+                  , r = Object(g.d)(n);
+                t(P(Object(g.b)(n, r, e)))
             }
         }
-        function I(e, t) {
+        function P(e, t) {
             return function(o, n) {
                 var i = n()
-                  , s = Object(w.d)(i);
+                  , s = Object(g.d)(i);
                 if (null != s && null != e) {
                     if (s.reelId !== e.reelId || s.itemIndex !== e.itemIndex) {
                         if (R(i),
@@ -4967,10 +5189,14 @@ webpackJsonp([17], {
                               , i = o.currentReelItemIndex
                               , s = d()(n.get(d()(r)))
                               , a = d()(e.users.viewerId)
-                              , c = y.a.getData()
-                              , p = Object(h.c)(e.relationships, s.userId)
-                              , u = e.posts.byId.get(d()(s.itemIds)[i]);
-                            Object(y.b)({
+                              , c = b.a.getData()
+
+
+                              , p = e.posts.byId.get(d()(s.itemIds)[i])
+                              , u = d()(p.owner).id
+                              , f = Object(m.c)(e.relationships, u);
+                            Object(b.b)({
+
                                 event_name: "reel_playback_navigation",
                                 containermodule: c.containermodule,
                                 source: a === s.userId ? "2" : "1",
@@ -4979,109 +5205,123 @@ webpackJsonp([17], {
                                 ig_userid: a,
                                 tray_session_id: e.stories.traySession,
                                 viewer_session_id: e.stories.viewerSession,
-                                media_key: u.id + "_" + s.userId,
-                                media_type: u.isVideo ? "2" : "1",
+                                media_key: p.id + "_" + u,
+
+                                media_type: p.isVideo ? "2" : "1",
                                 media_source: "organic",
                                 reel_position: i,
                                 reel_size: d()(s.itemIds).length,
                                 time_elapsed: Object(l.a)(c.mediaTotalTime - c.mediaPauseTime),
                                 pause_duration: Object(l.a)(c.mediaPauseTime),
                                 time_remaining: Object(l.a)(Math.max(c.mediaDuration - c.mediaTotalTime, 0)),
-                                follow_status: Object(h.b)(p),
+                                follow_status: Object(m.b)(f),
                                 first_view: c.mediaFirstView,
                                 tray_position: "reel_feed_timeline" === c.containermodule ? e.stories.currentTrayOrder.indexOf(s.id) : null,
-                                media_viewers: s.userId === a ? u.storyViewCount : null
+                                media_viewers: s.userId === a ? p.storyViewCount : null
                             })
                         }(i, t),
                         e.reelId !== s.reelId) {
-                            C(i);
-                            var a = Object(k.a)(i, e.reelId).username;
+                            I(i);
+
+                            var a = Object(x.a)(i, e.reelId).username;
                             a || c()(0),
                             r.b.replace("/stories/" + a + "/"),
-                            o(A(e.reelId))
+                            o(V(e.reelId))
+
                         }
-                        o($(e.reelId, e.itemIndex))
+                        o(E(e.reelId, e.itemIndex))
                     }
                 } else
-                    o(N())
+                    o(C())
+
             }
         }
         function R(e) {
             if (null != e.stories.currentReelId) {
-                var t = y.a.getData()
-                  , o = d()(Object(w.h)(e, d()(e.stories.currentReelId)))
-                  , n = Object(h.c)(e.relationships, o.userId);
-                if (o.itemIds) {
-                    var r = e.posts.byId.get(o.itemIds[e.stories.currentReelItemIndex]);
-                    Object(y.b)({
-                        event_name: "instagram_organic_time_spent",
-                        containermodule: t.containermodule,
-                        source_of_action: t.containermodule,
-                        media_key: r.id + "_" + o.userId,
-                        media_author: o.userId,
-                        media_type: r.isVideo ? "2" : "1",
-                        ig_userid: d()(e.users.viewerId),
-                        time_spent: Object(l.a)(t.mediaTotalTime),
-                        follow_status: Object(h.b)(n),
-                        tray_session_id: e.stories.traySession,
-                        viewer_session_id: e.stories.viewerSession,
-                        session_reel_counter: t.reelCounter,
-                        reel_position: e.stories.currentReelItemIndex,
-                        reel_size: d()(o.itemIds).length
-                    })
-                }
+                var t = b.a.getData()
+                  , o = d()(Object(g.h)(e, d()(e.stories.currentReelId)))
+                  , n = e.posts.byId.get(d()(o.itemIds)[e.stories.currentReelItemIndex])
+                  , r = d()(n.owner).id
+                  , i = Object(m.c)(e.relationships, r);
+                o.itemIds && Object(b.b)({
+
+
+
+
+                    event_name: "instagram_organic_time_spent",
+                    containermodule: t.containermodule,
+                    source_of_action: t.containermodule,
+                    media_key: n.id + "_" + r,
+                    media_author: o.userId,
+                    media_type: n.isVideo ? "2" : "1",
+                    ig_userid: d()(e.users.viewerId),
+                    time_spent: Object(l.a)(t.mediaTotalTime),
+                    follow_status: Object(m.b)(i),
+                    tray_session_id: e.stories.traySession,
+                    viewer_session_id: e.stories.viewerSession,
+                    session_reel_counter: t.reelCounter,
+                    reel_position: e.stories.currentReelItemIndex,
+                    reel_size: d()(o.itemIds).length
+                })
             }
         }
-        function C(e) {
+
+        function I(e) {
             if (null != e.stories.currentReelId) {
-                var t = d()(Object(w.h)(e, d()(e.stories.currentReelId)))
-                  , o = Object(h.c)(e.relationships, t.userId)
-                  , n = y.a.getData();
-                Object(y.b)({
+                var t = d()(Object(g.h)(e, d()(e.stories.currentReelId)))
+                  , o = e.posts.byId.get(d()(t.itemIds)[e.stories.currentReelItemIndex])
+                  , n = d()(o.owner).id
+                  , r = Object(m.c)(e.relationships, n)
+                  , i = b.a.getData();
+                Object(b.b)({
                     event_name: "reel_session_summary",
-                    containermodule: n.containermodule,
-                    source_of_action: n.containermodule,
+                    containermodule: i.containermodule,
+                    source_of_action: i.containermodule,
                     ig_userid: d()(e.users.viewerId),
                     tray_session_id: e.stories.traySession,
                     viewer_session_id: e.stories.viewerSession,
-                    session_reel_counter: n.reelCounter,
-                    media_author: t.userId,
-                    photos_consumed: n.photoCounter,
-                    videos_consumed: n.videoCounter,
+                    session_reel_counter: i.reelCounter,
+                    media_author: n,
+                    photos_consumed: i.photoCounter,
+                    videos_consumed: i.videoCounter,
                     ad_photos_consumed: 0,
                     ad_videos_consumed: 0,
                     ad_delivered_count: 0,
-                    tray_position: "reel_feed_timeline" === n.containermodule ? n.reelPositionInTray : null,
-                    viewer_session_media_consumed: n.mediaCounter,
-                    viewer_session_reels_consumed: n.reelCounter,
+                    tray_position: "reel_feed_timeline" === i.containermodule ? i.reelPositionInTray : null,
+                    viewer_session_media_consumed: i.mediaCounter,
+                    viewer_session_reels_consumed: i.reelCounter,
                     viewer_session_ad_media_consumed: 0,
                     viewer_session_ad_reels_consumed: 0,
                     reel_size: t.itemIds ? t.itemIds.length : 0,
-                    time_elapsed: Object(l.a)(n.reelTotalTime - n.reelPauseTime),
-                    follow_status: Object(h.b)(o),
-                    pause_duration: Object(l.a)(n.reelPauseTime)
+                    time_elapsed: Object(l.a)(i.reelTotalTime - i.reelPauseTime),
+                    follow_status: Object(m.b)(r),
+                    pause_duration: Object(l.a)(i.reelPauseTime)
                 })
             }
         }
-        function N() {
+        function C() {
             return function(e, t) {
                 var o = t();
                 R(o),
-                C(o),
+                I(o),
+
                 e(Object(p.f)()),
                 e({
-                    type: v.b
+                    type: y.b
+
                 })
             }
         }
-        var M = 15
-          , V = 15;
-        function A(e) {
+        var N = 15
+          , M = 15;
+
+
+        function V(e) {
             var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
               , o = t.batchSize
-              , r = void 0 === o ? V : o
+              , r = void 0 === o ? M : o
               , a = t.fetchDistance
-              , c = void 0 === a ? M : a;
+              , c = void 0 === a ? N : a;
             return function(t, o) {
                 var a = o()
                   , l = a.stories.currentTrayOrder
@@ -5089,62 +5329,74 @@ webpackJsonp([17], {
                   , u = Math.max(p - 1, 0)
                   , f = l.slice(u)
                   , m = f.findIndex(function(e) {
-                    return Object(w.m)(a, e)
+                    return Object(g.m)(a, e)
                 });
                 if (!(m >= 0 && m < c))
                     return Promise.resolve();
-                for (var h = [], y = m; y < f.length; y++) {
-                    var g = f[y];
-                    if (Object(w.m)(a, g) && (h.push(g),
-                    h.length >= r))
+                for (var b = [], v = m; v < f.length; v++) {
+                    var x = f[v];
+
+                    if (Object(g.m)(a, x) && (b.push(x),
+                    b.length >= r))
                         break
                 }
                 return t({
-                    type: v.e,
-                    reelIds: h
+                    type: y.e,
+                    reelIds: b
+
+
                 }),
-                Object(b.a)(Object(n.O)(O, {
-                    reel_ids: h,
-                    precomposed_overlay: Object(_.d)()
+                Object(h.a)(Object(n.P)(S, {
+                    reel_ids: b,
+
+                    precomposed_overlay: Object(w.d)()
                 }).then(function(e) {
                     var o = e.data;
                     t({
-                        type: v.d,
+                        type: y.d,
+
                         reels: d()(o.reels_media)
                     })
                 }, function(e) {
                     t({
-                        type: v.f,
-                        reelIds: h,
+                        type: y.f,
+                        reelIds: b,
+
+
                         toast: {
                             text: i.b
                         }
                     }),
-                    e instanceof s.a && e.statusCode && Object(x.a)("[GraphQL] AjaxError: (" + O + ") " + String(e.networkError) + "; " + String(e.statusCode) + "; " + String(e.responseText))
+                    e instanceof s.a && e.statusCode && Object(_.a)("[GraphQL] AjaxError: (" + S + ") " + String(e.networkError) + "; " + String(e.statusCode) + "; " + String(e.responseText))
                 }))
             }
         }
-        function T() {
+        function A() {
+
             return function(e, t) {
                 e({
-                    type: v.a
+                    type: y.a
+
                 }),
-                e(N())
+                e(C())
+
             }
         }
-        function D() {
+        function T() {
+
             return function(e) {
-                Object(g.b)(),
+                Object(v.b)(),
                 e({
-                    type: v.a
+                    type: y.a
+
                 })
             }
         }
     },
-    958: function(e, t, o) {
+    949: function(e, t, o) {
         "use strict";
-        var n, r, i = o(90), s = o(328), a = o.n(s), c = o(31), l = o.n(c), p = o(6), u = o.n(p), d = o(1), f = (o.n(d),
-        o(948)), m = l()(function() {
+        var n, r, i = o(91), s = o(328), a = o.n(s), c = o(31), l = o.n(c), p = o(6), u = o.n(p), d = o(1), f = (o.n(d),
+        o(939)), m = l()(function() {
             return !a.a.isBrowser("Edge") && "srcset"in document.createElement("img")
         }), h = l()(function() {
             return a.a.isBrowser("Firefox")
@@ -5276,11 +5528,12 @@ webpackJsonp([17], {
             return e.src !== t.src
         })(b)
     },
-    963: function(e, t, o) {
+    952: function(e, t, o) {
+
         "use strict";
         t.a = function() {
             var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : s.a;
-            Object(r.D)() && Object(n.b)(function() {
+            Object(r.E)() && Object(n.b)(function() {
                 setTimeout(function() {
                     window && document.body && (window.scrollTo(0, document.body.scrollHeight),
                     e())
@@ -5288,36 +5541,49 @@ webpackJsonp([17], {
             })
         }
         ;
-        var n = o(90)
+        var n = o(91)
           , r = o(3)
           , i = o(30)
           , s = o.n(i)
     },
-    968: function(e, t, o) {
+    955: function(e, t, o) {
+
         var n = o(2)
-          , r = o(969);
+          , r = o(956);
+
         n(r, "is40d15782")
     },
-    969: function(e, t) {
+    956: function(e, t) {
         e.exports = "._hql7s,._o2wxh{background-color:#fff;border-bottom:1px solid #dbdbdb}._o2wxh:last-child{border-bottom-width:0}._hql7s{color:#999;font-size:16px;font-weight:600;line-height:50px;text-align:center}@media (min-width:736px){._hql7s,._o2wxh{min-width:510px}}@media (min-width:414px) and (max-width:735px){._cepxb,._hql7s,._o2wxh{width:100%}}@media (min-width:414px){._cepxb{margin:0 auto}}"
     },
-    970: function(e, t, o) {
+    957: function(e, t, o) {
         var n = o(2)
-          , r = o(971);
+          , r = o(958);
+
         n(r, "is577659fb")
     },
-    971: function(e, t) {
+    958: function(e, t) {
         e.exports = "._h74gn{background:#fff;border:0;color:#262626;cursor:pointer;font-size:16px;font-weight:400;line-height:50px;margin:0;overflow:hidden;padding:0 16px;text-align:center;text-overflow:ellipsis;white-space:nowrap;width:100%}._h74gn:hover{background-color:#efefef}"
     },
-    973: function(e, t, o) {
+    963: function(e, t, o) {
         var n = o(2)
-          , r = o(974);
+          , r = o(964);
+        n(r, "is7b235645")
+    },
+    964: function(e, t) {
+        e.exports = "._kg3s8{-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch;background-color:#efefef;margin-bottom:0;overflow:auto}"
+    },
+    966: function(e, t, o) {
+        var n = o(2)
+          , r = o(967);
+
         n(r, "is-2bf7a73c")
     },
-    974: function(e, t) {
+    967: function(e, t) {
         e.exports = "._gwyj6{position:relative}._4c5eh{background:0 0;bottom:0;left:0;position:absolute;right:0;top:0;z-index:-1}._o6ctz{border:0;display:block;height:100%;margin:0;padding:0;width:100%}"
     },
-    975: function(e, t, o) {
+    968: function(e, t, o) {
+
         (function(t) {
             function o() {
                 "use strict"
@@ -5338,20 +5604,20 @@ webpackJsonp([17], {
             var n = t.MutationObserver || t.WebKitMutationObserver || o;
             e.exports = n
         }
-        ).call(t, o(21))
+        ).call(t, o(20))
     },
-    977: function(e, t, o) {
-        var n = o(2)
-          , r = o(978);
-        n(r, "is7b235645")
-    },
-    978: function(e, t) {
-        e.exports = "._kg3s8{-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch;background-color:#efefef;margin-bottom:0;overflow:auto}"
-    },
-    994: function(e, t, o) {
+
+
+
+
+
+
+
+
+    984: function(e, t, o) {
         "use strict";
-        var n, r, i = o(60), s = o(946), a = o(943), c = o(235), l = o(1), p = (o.n(l),
-        o(47)), u = o(942), d = o(252);
+        var n, r, i = o(60), s = o(935), a = o(933), c = o(234), l = o(1), p = (o.n(l),
+        o(48)), u = o(934), d = o(251);
         function f() {
             for (var e, t, o = this, n = arguments.length, s = Array(n), a = 0; a < n; a++)
                 s[a] = arguments[a];
@@ -5374,15 +5640,15 @@ webpackJsonp([17], {
                 onCancel: this.props.onClose
             }, this.props.hasGoToOption && l.createElement(a.a, {
                 onClick: this.$OptionsModal1
-            }, o(0)(301)), this.props.hasDeleteOption && l.createElement(a.a, {
+            }, o(0)(305)), this.props.hasDeleteOption && l.createElement(a.a, {
                 onClick: this.props.onDeleteClick
-            }, o(0)(875)), this.props.hasReportInappropriateOption && l.createElement(a.a, {
+            }, o(0)(880)), this.props.hasReportInappropriateOption && l.createElement(a.a, {
                 onClick: this.props.onReportInappropriateClick
-            }, o(0)(837)), this.props.hasEmbedOption && l.createElement(a.a, {
+            }, o(0)(841)), this.props.hasEmbedOption && l.createElement(a.a, {
                 onClick: this.props.onEmbedCodeClick
-            }, o(0)(313)), this.props.hasShareOption && l.createElement(a.a, {
+            }, o(0)(317)), this.props.hasShareOption && l.createElement(a.a, {
                 onClick: this.props.onShareClick
-            }, o(0)(464)));
+            }, o(0)(468)));
             return e ? l.createElement(u.a, {
                 onClose: this.props.onClose
             }, t) : l.createElement(c.a, {
@@ -5392,11 +5658,12 @@ webpackJsonp([17], {
         ,
         t.a = Object(p.withRouter)(f)
     },
-    995: function(e, t, o) {
+    985: function(e, t, o) {
         "use strict";
-        var n, r, i = o(17), s = o.n(i), a = o(64), c = o(13), l = o(60), p = o(946), u = o(943), d = o(235), f = o(1), m = (o.n(f),
-        o(26)), h = o(942), b = o(252);
-        o(996);
+        var n, r, i = o(17), s = o.n(i), a = o(64), c = o(13), l = o(60), p = o(935), u = o(933), d = o(234), f = o(1), m = (o.n(f),
+        o(26)), h = o(934), b = o(251);
+        o(986);
+
         var y = s()({
             proprietyOptions: null,
             reportSubmitted: null,
@@ -5411,7 +5678,7 @@ webpackJsonp([17], {
             violence: 5,
             hateSpeech: 6
         }
-          , g = o(0)(481);
+          , g = o(0)(485);
         function w() {
             for (var e, t, o = this, n = arguments.length, i = Array(n), s = 0; s < n; s++)
                 i[s] = arguments[s];
@@ -5517,7 +5784,7 @@ webpackJsonp([17], {
         w.prototype.renderGratitude = function() {
             return f.createElement("div", {
                 className: "_lelt4"
-            }, f.createElement("p", null, o(0)(1203)), f.createElement(a.default, {
+            }, f.createElement("p", null, o(0)(1213)), f.createElement(a.default, {
                 className: "_bimh7",
                 onClick: this.props.onClose
             }, g))
@@ -5527,47 +5794,47 @@ webpackJsonp([17], {
             return [f.createElement(u.a, {
                 key: "nudity",
                 onClick: this.$ReportInappropriateModal11
-            }, o(0)(569)), f.createElement(u.a, {
+            }, o(0)(571)), f.createElement(u.a, {
                 key: "violence",
                 onClick: this.$ReportInappropriateModal14
-            }, o(0)(827)), f.createElement(u.a, {
+            }, o(0)(831)), f.createElement(u.a, {
                 key: "hateSpeech",
                 onClick: this.$ReportInappropriateModal7
-            }, o(0)(1279)), f.createElement(u.a, {
+            }, o(0)(1289)), f.createElement(u.a, {
                 key: "ip",
                 onClick: this.$ReportInappropriateModal10
-            }, o(0)(772))]
+            }, o(0)(777))]
         }
         ,
         w.prototype.renderRiskChoices = function() {
             return [f.createElement(u.a, {
                 key: "selfHarm",
                 onClick: this.$ReportInappropriateModal12
-            }, o(0)(154), " ", f.createElement("span", {
+            }, o(0)(157), " ", f.createElement("span", {
                 className: "_a7h6d"
-            }, o(0)(90))), f.createElement(u.a, {
+            }, o(0)(91))), f.createElement(u.a, {
                 key: "harassment",
                 onClick: this.$ReportInappropriateModal6
-            }, o(0)(1156)), f.createElement(u.a, {
+            }, o(0)(1164)), f.createElement(u.a, {
                 key: "drugUse",
                 onClick: this.$ReportInappropriateModal5
-            }, o(0)(888))]
+            }, o(0)(894))]
         }
         ,
         w.prototype.renderRootChoices = function() {
             return [f.createElement(u.a, {
                 key: "dislike",
                 onClick: this.$ReportInappropriateModal9
-            }, this.props.isVideo ? o(0)(701) : o(0)(438)), f.createElement(u.a, {
+            }, this.props.isVideo ? o(0)(705) : o(0)(442)), f.createElement(u.a, {
                 key: "spamOrScam",
                 onClick: this.$ReportInappropriateModal13
-            }, this.props.isVideo ? o(0)(925) : o(0)(100)), f.createElement(u.a, {
+            }, this.props.isVideo ? o(0)(933) : o(0)(101)), f.createElement(u.a, {
                 key: "risk",
                 onClick: this.$ReportInappropriateModal3
-            }, this.props.isVideo ? o(0)(182) : o(0)(454)), f.createElement(u.a, {
+            }, this.props.isVideo ? o(0)(185) : o(0)(458)), f.createElement(u.a, {
                 key: "propriety",
                 onClick: this.$ReportInappropriateModal2
-            }, this.props.isVideo ? o(0)(545) : o(0)(58))]
+            }, this.props.isVideo ? o(0)(547) : o(0)(58))]
         }
         ,
         w.prototype.render = function() {
@@ -5581,13 +5848,14 @@ webpackJsonp([17], {
         ,
         t.a = w
     },
-    996: function(e, t, o) {
+    986: function(e, t, o) {
         var n = o(2)
-          , r = o(997);
+          , r = o(987);
+
         n(r, "is71d45fb4")
     },
-    997: function(e, t) {
+    987: function(e, t) {
         e.exports = "._a7h6d{color:#999;display:block;font-size:12px;font-weight:400;line-height:16px;margin-top:-12px;margin-bottom:12px}._lelt4{background-color:#fff;border-color:#efefef;border-radius:4px;border-style:solid;border-width:1px;color:#262626;margin:0 auto;max-width:414px;padding:16px}._bimh7{-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;margin-top:16px}"
     }
 });
-alert("Instagram Stories Script Final v1.1.1 by Maxhyt successfully hooked!");
+alert("Instagram Stories Script v1.2 by Maxhyt successfully hooked!");
