@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Instagram++
 // @namespace    maxhyt.instagrampp
-// @version      1.3.2
+// @version      1.3.3
 // @description  Instagram++ Help Tools
 // @author       Maxhyt
 // @homepage     https://maxhyt.github.io/InstagramPlusPlus/
@@ -65,10 +65,16 @@
                     arrowFeed.onclick = function () { reset(); };
                 }
 //Profile
-                var arrowProfile = article[i].getElementsByClassName("_8kphn")[0];
-                if (typeof arrowProfile !== "undefined")
+                var arrowArticleLeft = article[i].getElementsByClassName("coreSpriteLeftChevron")[0];
+                if (typeof arrowArticleLeft !== "undefined")
                 {
-                    arrowProfile.onclick = function () { reset(); };
+                    arrowArticleLeft.onclick = function () { reset(); };
+                }
+
+                var arrowArticleRight = article[i].getElementsByClassName("coreSpriteRightChevron")[0];
+                if (typeof arrowArticleRight !== "undefined")
+                {
+                    arrowArticleRight.onclick = function () { reset(); };
                 }
 
                 var arrowSwitchLeft = document.getElementsByClassName("coreSpriteLeftPaginationArrow")[0];
