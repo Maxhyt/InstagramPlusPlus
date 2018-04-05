@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Instagram++
 // @namespace    maxhyt.instagrampp
-// @version      1.3.3
+// @version      1.3.4
 // @description  Instagram++ Help Tools
 // @author       Maxhyt
 // @homepage     https://maxhyt.github.io/InstagramPlusPlus/
@@ -36,9 +36,9 @@
                 var stVidLink = document.getElementsByClassName("_ntjhp  _6kyf0")[0];
 
                 if (typeof stPicLink !== "undefined")
-                    storyMenu.innerHTML += "<li class=\"_o2wxh\"><a href=\"" + stPicLink.src + "\" download><button class=\"_h74gn\">Download</button></a></li>";
+                    storyMenu.innerHTML += "<li class=\"_o2wxh\"><a href=\"" + stPicLink.src + "\" download target=\"_blank\"><button class=\"_h74gn\">Download</button></a></li>";
                 else if (typeof stVidLink !== "undefined")
-                    storyMenu.innerHTML += "<li class=\"_o2wxh\"><a href=\"" + stVidLink.getElementsByTagName("source")[0].src + "\" download><button class=\"_h74gn\">Download</button></a></li>";
+                    storyMenu.innerHTML += "<li class=\"_o2wxh\"><a href=\"" + stVidLink.getElementsByTagName("source")[0].src + "\" download target=\"_blank\"><button class=\"_h74gn\">Download</button></a></li>";
                 else
                     storyMenu.innerHTML += "<li class=\"_o2wxh\"><button onclick=\"alert('Error: Could not get link');\" class=\"_h74gn\">Download</button></li>";
                 storyMenu.innerHTML += "<li class=\"_o2wxh\"><a target=\"_blank\" href=\"https://maxhyt.github.io/InstagramPlusPlus\"><button class=\"_h74gn\">IG++ Guide</button></a></li>";
@@ -90,7 +90,7 @@
                 }
 
                 if (feedMenu.innerHTML.indexOf("Download") === -1)
-                    feedMenu.innerHTML += "<a class=\"_l9yih coreDownloadSaveButton\" href=\"" + src + "\" download role=\"button\"><span class=\"_8scx2\" style=\"background-image: url(https://maxhyt.github.io/InstagramPlusPlus/download.png); width: 24px; height: 24px;\">Download</span></a>";
+                    feedMenu.innerHTML += "<a class=\"_l9yih coreDownloadSaveButton\" href=\"" + src + "\" download target=\"_blank\" role=\"button\"><span class=\"_8scx2\" style=\"background-image: url(https://maxhyt.github.io/InstagramPlusPlus/download.png); width: 24px; height: 24px;\">Download</span></a>";
             }
             dlButton();
         }, 500);
