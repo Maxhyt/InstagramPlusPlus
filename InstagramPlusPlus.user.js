@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Instagram++
 // @namespace    maxhyt.instagrampp
-// @version      1.3.4
+// @version      1.3.4.1
 // @description  Instagram++ Help Tools
 // @author       Maxhyt
 // @homepage     https://maxhyt.github.io/InstagramPlusPlus/
@@ -21,12 +21,9 @@
     pplus.crossOrigin = "anonymous";
     document.body.appendChild(pplus);
 
-    var loop = true;
-
     dlButton();
     function dlButton()
     {
-        if (loop)
         setTimeout(function () {
 //Story
             var storyMenu = document.getElementsByClassName("_cepxb")[0];
