@@ -1,9 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20180326
+! Version: 20180408
 ! Title: IGScriptRemove
 ! Expires: 7 days (update frequency)
 ! Last modified: 
 ! Author: Maxhyt
 ! Homepage: https://maxhyt.github.io/InstagramPlusPlus
-
-/static/bundles/base/DesktopStoriesPage.js/*
