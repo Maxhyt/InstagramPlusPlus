@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Instagram++
 // @namespace    maxhyt.instagrampp
-// @version      1.3.4.1
+// @version      2.0
 // @description  Instagram++ Help Tools
 // @author       Maxhyt
 // @homepage     https://maxhyt.github.io/InstagramPlusPlus/
@@ -9,28 +9,91 @@
 // @run-at       document-end
 // @downloadURL  https://maxhyt.github.io/InstagramPlusPlus/InstagramPlusPlus.user.js
 // @updateURL    https://maxhyt.github.io/InstagramPlusPlus/InstagramPlusPlus.user.js
-// @grant        none
+// @require      https://code.jquery.com/jquery-3.3.1.min.js
+// @grant        GM_setValue
+// @grant        GM_getValue
+// @grant        GM.setValue
+// @grant        GM.getValue
 // ==/UserScript==
 
 (function () {
-    var pplus = document.createElement("script");
-    pplus.type = "text/javascript";
-    pplus.src = "https://maxhyt.github.io/InstagramPlusPlus/InstagramStories.js";
-    pplus.setAttribute("async", "");
-    pplus.setAttribute("charset", "utf-8");
-    pplus.crossOrigin = "anonymous";
-    document.body.appendChild(pplus);
+//SETUP
+    String.prototype.replaceAll = function(target, replacement) {
+        return this.split(target).join(replacement);
+    };
+
+    const gm = {};
+    if (typeof GM_setValue === "function")
+        gm.setValue = GM_setValue;
+    else
+        gm.setValue = GM.setValue;
+    if (typeof GM_getValue === "function")
+        gm.getValue = GM_getValue;
+    else
+        gm.getValue = GM.getValue;
+//END SETUP
+    var r = gm.getValue("storyJS");
+
+    if (gm.getValue("lastFetch") < (Math.round(new Date().getTime()/60000) - 30))
+    {
+        setTimeout(function()
+        {
+            var storyPanel = jQuery("._guwow")[0];
+            if (typeof storyPanel !== "undefined")
+            {
+                storyPanel.onclick = function () {
+                    setTimeout(function() {
+                        var scripts = jQuery("script");
+                        for (var i = 0; i < scripts.length; i++)
+                        {
+                            if (scripts[i].src.indexOf("DesktopStories") !== -1)
+                            {
+                                var storyLink = scripts[i].src;
+                                jQuery.ajax({
+                                    method: "POST",
+                                    url: storyLink
+                                }).done(function(msg) {
+                                    r = msg.replaceAll(",o.props.onNext(\"automatic_forward\"),o.setState({isEnded:!0", ",o.setState({isEnded:!1").replaceAll(",o.props.onNext(\"automatic_forward\")","");
+                                    gm.setValue("storyJS", r);
+                                    gm.setValue("lastFetch", Math.round(new Date().getTime()/60000));
+                                    if(confirm("I need to refresh this page so the new script can work. Do you want me to refresh?"))
+                                        location.href = location.href;
+                                });
+                                break;
+                            }
+                        }
+                    }, 2000);
+                };
+            }
+        }, 1000);
+    }
+
+    implement();
+    function implement()
+    {
+        setTimeout(function() {
+            if (gm.getValue("lastFetch") >= (Math.round(new Date().getTime()/60000) - 30))
+            {
+                var pplus = document.createElement("script");
+                pplus.type = "text/javascript";
+                pplus.innerHTML = r + " alert(\"Instagram Stories script overrided!\");";
+                jQuery("head")[0].appendChild(pplus);
+            }
+            else
+                implement();
+        }, 1000);
+    }
 
     dlButton();
     function dlButton()
     {
         setTimeout(function () {
 //Story
-            var storyMenu = document.getElementsByClassName("_cepxb")[0];
+            var storyMenu = jQuery("._cepxb")[0];
             if (typeof storyMenu !== "undefined" && storyMenu.innerHTML.indexOf("Download") === -1 && window.location.href.indexOf("stories") !== -1)
             {
-                var stPicLink = document.getElementsByClassName("_ntjhp _ro0gg")[0];
-                var stVidLink = document.getElementsByClassName("_ntjhp  _6kyf0")[0];
+                var stPicLink = jQuery("._ntjhp._ro0gg")[0];
+                var stVidLink = jQuery("._ntjhp._6kyf0")[0];
 
                 if (typeof stPicLink !== "undefined")
                     storyMenu.innerHTML += "<li class=\"_o2wxh\"><a href=\"" + stPicLink.src + "\" download target=\"_blank\"><button class=\"_h74gn\">Download</button></a></li>";
@@ -41,7 +104,7 @@
                 storyMenu.innerHTML += "<li class=\"_o2wxh\"><a target=\"_blank\" href=\"https://maxhyt.github.io/InstagramPlusPlus\"><button class=\"_h74gn\">IG++ Guide</button></a></li>";
             }
 //News Feed
-            var article = document.querySelectorAll("article._622au");
+            var article = jQuery("article._622au");
             for (var i = 0; i < article.length; i++)
             {
 
@@ -61,7 +124,7 @@
                 {
                     arrowFeed.onclick = function () { reset(); };
                 }
-//Profile
+
                 var arrowArticleLeft = article[i].getElementsByClassName("coreSpriteLeftChevron")[0];
                 if (typeof arrowArticleLeft !== "undefined")
                 {
@@ -73,7 +136,7 @@
                 {
                     arrowArticleRight.onclick = function () { reset(); };
                 }
-
+//Profile
                 var arrowSwitchLeft = document.getElementsByClassName("coreSpriteLeftPaginationArrow")[0];
                 if (typeof arrowSwitchLeft !== "undefined")
                 {
@@ -95,7 +158,7 @@
 
     function reset()
     {
-        var tmp = document.getElementsByClassName("coreDownloadSaveButton");
+        var tmp = jQuery(".coreDownloadSaveButton");
         for (var m = 0; m < tmp.length; m++)
         {
             tmp[m].parentNode.removeChild(tmp[m]);
