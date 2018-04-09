@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Instagram++
 // @namespace    maxhyt.instagrampp
-// @version      2.0.1
+// @version      2.1.1
 // @description  Instagram++ Help Tools
 // @author       Maxhyt
 // @homepage     https://maxhyt.github.io/InstagramPlusPlus/
@@ -14,6 +14,7 @@
 // @grant        GM_getValue
 // @grant        GM.setValue
 // @grant        GM.getValue
+// @grant        GM_registerMenuCommand
 // ==/UserScript==
 
 (function () {
@@ -27,11 +28,47 @@
         gm.setValue = GM_setValue;
     else
         gm.setValue = GM.setValue;
+
     if (typeof GM_getValue === "function")
         gm.getValue = GM_getValue;
     else
         gm.getValue = GM.getValue;
+
+    if (typeof GM_registerMenuCommand === 'undefined') {
+        gm.registerMenuCommand = (caption, commandFunc, accessKey) => {
+            if (!document.body) {
+                if (document.readyState === 'loading' && document.documentElement && document.documentElement.localName === 'html') {
+                    new MutationObserver((mutations, observer) => {
+                        if (document.body) {
+                            observer.disconnect();
+                            GM_registerMenuCommand(caption, commandFunc, accessKey);
+                        }
+                    }).observe(document.documentElement, {childList: true});
+                } else {
+                    console.error('GM_registerMenuCommand got no body.');
+                }
+                return;
+            }
+            let contextMenu = document.body.getAttribute('contextmenu');
+            let menu = (contextMenu ? document.querySelector('menu#' + contextMenu) : null);
+            if (!menu) {
+                menu = document.createElement('menu');
+                menu.setAttribute('id', 'gm-registered-menu');
+                menu.setAttribute('type', 'context');
+                document.body.appendChild(menu);
+                document.body.setAttribute('contextmenu', 'gm-registered-menu');
+            }
+            let menuItem = document.createElement('menuitem');
+            menuItem.textContent = caption;
+            menuItem.addEventListener('click', commandFunc, true);
+            menu.appendChild(menuItem);
+        };
+    }
+    else
+        gm.registerMenuCommand = GM_registerMenuCommand;
 //END SETUP
+    gm.registerMenuCommand("IG++ Fetch story script", function() { gm.setValue("lastFetch", 0); location.href=location.href; });
+
     var r = gm.getValue("storyJS");
 
     if (gm.getValue("lastFetch") < (Math.round(new Date().getTime()/3600000) - 6))
@@ -58,7 +95,10 @@
                                     gm.setValue("storyJS", r);
                                     gm.setValue("lastFetch", Math.round(new Date().getTime()/60000));
                                     if(confirm("I need to refresh this page so the new script can work. Do you want me to refresh?"))
+                                    {
                                         location.href = location.href;
+                                        return;
+                                    }
                                 });
                                 break;
                             }
@@ -77,7 +117,7 @@
             {
                 var pplus = document.createElement("script");
                 pplus.type = "text/javascript";
-                pplus.innerHTML = r + " alert(\"Instagram Stories script overrided!\");";
+                pplus.innerHTML = r + " alert(\"IG++: Instagram Stories script overrided!\");";
                 jQuery("head")[0].appendChild(pplus);
             }
             else
