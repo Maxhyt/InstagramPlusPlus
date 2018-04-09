@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Instagram++
 // @namespace    maxhyt.instagrampp
-// @version      2.1.1.1
+// @version      2.1.2
 // @description  Instagram++ Help Tools
 // @author       Maxhyt
 // @homepage     https://maxhyt.github.io/InstagramPlusPlus/
@@ -66,6 +66,8 @@
     else
         gm.registerMenuCommand = GM_registerMenuCommand;
 //END SETUP
+    if(gm.getValue("lastFetch") == "undefined") gm.setValue("lastFetch", 0);
+
     gm.registerMenuCommand("IG++ Fetch story script", function() { gm.setValue("lastFetch", 0); location.href=location.href; });
 
     var r = gm.getValue("storyJS");
