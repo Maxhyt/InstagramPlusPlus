@@ -6,7 +6,6 @@
 // @author       Maxhyt
 // @homepage     https://maxhyt.github.io/InstagramPlusPlus/
 // @match        https://www.instagram.com/*
-// @run-at       document-end
 // @downloadURL  https://maxhyt.github.io/InstagramPlusPlus/InstagramPlusPlus.user.js
 // @updateURL    https://maxhyt.github.io/InstagramPlusPlus/InstagramPlusPlus.meta.js
 // @require      https://code.jquery.com/jquery-3.3.1.min.js
