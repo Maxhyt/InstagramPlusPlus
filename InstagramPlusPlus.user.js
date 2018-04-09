@@ -66,7 +66,7 @@
     else
         gm.registerMenuCommand = GM_registerMenuCommand;
 //END SETUP
-    if(gm.getValue("lastFetch") == "undefined") gm.setValue("lastFetch", 0);
+    if(typeof gm.getValue("lastFetch") === "undefined") gm.setValue("lastFetch", 0);
 
     gm.registerMenuCommand("IG++ Fetch story script", function() { gm.setValue("lastFetch", 0); location.href=location.href; });
 
