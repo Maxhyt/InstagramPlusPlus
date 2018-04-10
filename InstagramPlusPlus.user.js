@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Instagram++
 // @namespace    maxhyt.instagrampp
-// @version      2.1.2
+// @version      2.1.3
 // @description  Instagram++ Help Tools
 // @author       Maxhyt
 // @homepage     https://maxhyt.github.io/InstagramPlusPlus/
@@ -65,6 +65,8 @@
     }
     else
         gm.registerMenuCommand = GM_registerMenuCommand;
+
+    var curHour = Math.round(new Date().getTime()/3600000);
 //END SETUP
     if(typeof gm.getValue("lastFetch") === "undefined") gm.setValue("lastFetch", 0);
 
@@ -72,7 +74,7 @@
 
     var r = gm.getValue("storyJS");
 
-    if (gm.getValue("lastFetch") < (Math.round(new Date().getTime()/3600000) - 6))
+    if (gm.getValue("lastFetch") < (curHour - 6))
     {
         alert("IG++: IG Story script outdated. Click on any stories to generate a new one!");
         setTimeout(function()
@@ -94,7 +96,7 @@
                                 }).done(function(msg) {
                                     r = msg.replaceAll(",o.props.onNext(\"automatic_forward\"),o.setState({isEnded:!0", ",o.setState({isEnded:!1").replaceAll(",o.props.onNext(\"automatic_forward\")","");
                                     gm.setValue("storyJS", r);
-                                    gm.setValue("lastFetch", Math.round(new Date().getTime()/60000));
+                                    gm.setValue("lastFetch", curHour);
                                     if(confirm("I need to refresh this page so the new script can work. Do you want me to refresh?"))
                                     {
                                         location.href = location.href;
@@ -114,7 +116,7 @@
     function implement()
     {
         setTimeout(function() {
-            if (gm.getValue("lastFetch") >= (Math.round(new Date().getTime()/3600000) - 6))
+            if (gm.getValue("lastFetch") >= (curHour - 6))
             {
                 var pplus = document.createElement("script");
                 pplus.type = "text/javascript";
