@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Instagram++
 // @namespace    maxhyt.instagrampp
-// @version      2.1.3
+// @version      2.1.4
 // @description  Instagram++ Help Tools
 // @author       Maxhyt
 // @homepage     https://maxhyt.github.io/InstagramPlusPlus/
@@ -94,7 +94,7 @@
                                     method: "POST",
                                     url: storyLink
                                 }).done(function(msg) {
-                                    r = msg.replaceAll(",o.props.onNext(\"automatic_forward\"),o.setState({isEnded:!0", ",o.setState({isEnded:!1").replaceAll(",o.props.onNext(\"automatic_forward\")","");
+                                    r = msg.replaceAll(/,\w\.props\.onNext\(\"automatic_forward\"\)/, "").replaceAll("isEnded: !0","isEnded: !1");
                                     gm.setValue("storyJS", r);
                                     gm.setValue("lastFetch", curHour);
                                     if(confirm("I need to refresh this page so the new script can work. Do you want me to refresh?"))
@@ -133,19 +133,19 @@
     {
         setTimeout(function () {
 //Story
-            var storyMenu = jQuery("._cepxb")[0];
+            var storyMenu = jQuery("._i38s9")[0];
             if (typeof storyMenu !== "undefined" && storyMenu.innerHTML.indexOf("Download") === -1 && window.location.href.indexOf("stories") !== -1)
             {
                 var stPicLink = jQuery("._ntjhp._ro0gg")[0];
                 var stVidLink = jQuery("._ntjhp._6kyf0")[0];
 
                 if (typeof stPicLink !== "undefined")
-                    storyMenu.innerHTML += "<li class=\"_o2wxh\"><a href=\"" + stPicLink.src + "\" download target=\"_blank\"><button class=\"_h74gn\">Download</button></a></li>";
+                    storyMenu.innerHTML += "<a class=\"_c92w7\" href=\"" + stPicLink.src + "\" download target=\"_blank\" tabindex=\"1\">Download</a>";
                 else if (typeof stVidLink !== "undefined")
-                    storyMenu.innerHTML += "<li class=\"_o2wxh\"><a href=\"" + stVidLink.getElementsByTagName("source")[0].src + "\" download target=\"_blank\"><button class=\"_h74gn\">Download</button></a></li>";
+                    storyMenu.innerHTML += "<a class=\"_c92w7\" href=\"" + stVidLink.getElementsByTagName("source")[0].src + "\" download target=\"_blank\" tabindex=\"1\">Download</a>";
                 else
-                    storyMenu.innerHTML += "<li class=\"_o2wxh\"><button onclick=\"alert('Error: Could not get link');\" class=\"_h74gn\">Download</button></li>";
-                storyMenu.innerHTML += "<li class=\"_o2wxh\"><a target=\"_blank\" href=\"https://maxhyt.github.io/InstagramPlusPlus\"><button class=\"_h74gn\">IG++ Guide</button></a></li>";
+                    storyMenu.innerHTML += "<a class=\"_c92w7\" onclick=\"alert('Error: Could not get link');\" class=\"_h74gn\" tabindex=\"1\">Download</a>";
+                storyMenu.innerHTML += "<a class=\"_c92w7\" target=\"_blank\" href=\"https://maxhyt.github.io/InstagramPlusPlus\" tabindex=\"2\">IG++ Guide</a>";
             }
 //News Feed
             var article = jQuery("article._622au");
