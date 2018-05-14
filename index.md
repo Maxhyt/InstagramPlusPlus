@@ -1,5 +1,8 @@
+# Instagram++
+A "powerful" tool provides enhanced features to Instagram web version<br/><br/>
+
 **Features:**<br/>
-- Stop stories at the end, then replay when you hover through<br/>
+- Stop stories at the end ~~, then replay when you hover through~~<br/>
 - Download stories<br/>
 - Download pictures and videos from news feed and in profiles<br/><br/>
 
@@ -12,4 +15,4 @@
 
 *Please create an issue or a pull request if you want more features (because i got none)*<br><br>
 
-***Use at your risk***
+***Use at your own risk***
