@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Instagram++
 // @namespace    maxhyt.instagrampp
-// @version      2.1.4
+// @version      2.1.5
 // @description  Instagram++ Help Tools
 // @author       Maxhyt
 // @homepage     https://maxhyt.github.io/InstagramPlusPlus/
@@ -99,8 +99,8 @@
                                     gm.setValue("lastFetch", curHour);
                                     if(confirm("I need to refresh this page so the new script can work. Do you want me to refresh?"))
                                     {
-                                        location.href = location.href;
-                                        return;
+                                        window.location.href = "https://www.instagram.com";
+                                        throw "Updated!";
                                     }
                                 });
                                 break;
