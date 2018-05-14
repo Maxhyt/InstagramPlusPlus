@@ -1,6 +1,3 @@
-# Instagram++
-A "powerful" tool provides enhanced features to Instagram web version<br/><br/>
-
 **Features:**<br/>
 - Stop stories at the end ~~, then replay when you hover through~~<br/>
 - Download stories<br/>
