@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Instagram++
 // @namespace    maxhyt.instagrampp
-// @version      2.2
+// @version      2.2.1
 // @description  Instagram++ Help Tools
 // @author       Maxhyt
 // @homepage     https://maxhyt.github.io/InstagramPlusPlus/
@@ -75,7 +75,7 @@
     {
         gm.setValue("lastFetch", 0);
     }
-  	else
+    else
     {
 		let i = await gm.getValue("lastFetch", -1);
         if (i === -1)
@@ -83,10 +83,10 @@
           	gm.setValue("lastFetch", 0);
         }
     }
-    
+
     lastFetch = await gm.getValue("lastFetch");
     var r = await gm.getValue("storyJS");
-  
+
     gm.registerMenuCommand("IG++ Fetch story script", function() { gm.setValue("lastFetch", 0); location.href=location.href; });
 
     if (lastFetch < (curHour - 6))
@@ -94,7 +94,7 @@
         alert("IG++: IG Story script outdated. Click on any stories to generate a new one!");
         setTimeout(function()
         {
-            var storyPanel = jQuery("._guwow")[0];
+            var storyPanel = jQuery("._c6cph")[0];
             if (typeof storyPanel !== "undefined")
             {
                 storyPanel.onclick = function () {
