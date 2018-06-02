@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Instagram++
 // @namespace    maxhyt.instagrampp
-// @version      2.2.1
+// @version      2.3
 // @description  Instagram++ Help Tools
 // @author       Maxhyt
 // @homepage     https://maxhyt.github.io/InstagramPlusPlus/
@@ -87,14 +87,14 @@
     lastFetch = await gm.getValue("lastFetch");
     var r = await gm.getValue("storyJS");
 
-    gm.registerMenuCommand("IG++ Fetch story script", function() { gm.setValue("lastFetch", 0); location.href=location.href; });
+    gm.registerMenuCommand("IG++ Fetch story script", function() { gm.setValue("lastFetch", 0); location.href="https://www.instagram.com"; });
 
     if (lastFetch < (curHour - 6))
     {
         alert("IG++: IG Story script outdated. Click on any stories to generate a new one!");
         setTimeout(function()
         {
-            var storyPanel = jQuery("._c6cph")[0];
+            var storyPanel = jQuery(".aD2cN")[0];
             if (typeof storyPanel !== "undefined")
             {
                 storyPanel.onclick = function () {
@@ -148,68 +148,74 @@
     {
         setTimeout(function () {
 //Story
-            var storyMenu = jQuery("._i38s9")[0];
+            var storyMenu = jQuery(".mt3GC")[0];
             if (typeof storyMenu !== "undefined" && storyMenu.innerHTML.indexOf("Download") === -1 && window.location.href.indexOf("stories") !== -1)
             {
-                var stPicLink = jQuery("._ntjhp._ro0gg")[0];
-                var stVidLink = jQuery("._ntjhp._6kyf0")[0];
+                var stPicLink = jQuery(".y-yJ5._7NpAS.i1HvM")[0];
+                var stVidLink = jQuery(".y-yJ5.OFkrO")[0];
 
                 if (typeof stPicLink !== "undefined")
-                    storyMenu.innerHTML += "<a class=\"_c92w7\" href=\"" + stPicLink.src + "\" download target=\"_blank\" tabindex=\"1\">Download</a>";
+                    storyMenu.innerHTML += "<a class=\"aOOlW HoLwm\" href=\"" + stPicLink.src + "\" download target=\"_blank\">Download</a>";
                 else if (typeof stVidLink !== "undefined")
-                    storyMenu.innerHTML += "<a class=\"_c92w7\" href=\"" + stVidLink.getElementsByTagName("source")[0].src + "\" download target=\"_blank\" tabindex=\"1\">Download</a>";
+                    storyMenu.innerHTML += "<a class=\"aOOlW HoLwm\" href=\"" + stVidLink.getElementsByTagName("source")[0].src + "\" download target=\"_blank\">Download</a>";
                 else
-                    storyMenu.innerHTML += "<a class=\"_c92w7\" onclick=\"alert('Error: Could not get link');\" class=\"_h74gn\" tabindex=\"1\">Download</a>";
-                storyMenu.innerHTML += "<a class=\"_c92w7\" target=\"_blank\" href=\"https://maxhyt.github.io/InstagramPlusPlus\" tabindex=\"2\">IG++ Guide</a>";
+                    storyMenu.innerHTML += "<a class=\"aOOlW HoLwm\" onclick=\"alert('Error: Could not get link');\">Download</a>";
+                storyMenu.innerHTML += "<a class=\"aOOlW HoLwm\" target=\"_blank\" href=\"https://maxhyt.github.io/InstagramPlusPlus\">IG++ Guide</a>";
             }
 //News Feed
-            var article = jQuery("article._622au");
+            var article = jQuery("article.M9sTE.L_LMM");
             for (var i = 0; i < article.length; i++)
             {
 
                 var src;
-                var picLink = article[i].getElementsByClassName("_2di5p")[0];
-                var vidLink = article[i].getElementsByClassName("_l6uaz")[0];
+                var picLink = article[i].getElementsByClassName("FFVAD")[0];
+                var vidLink = article[i].getElementsByClassName("tWeCl")[0];
 
                 if (typeof picLink !== "undefined")
                     src = picLink.src;
                 else if (typeof vidLink !== "undefined")
                     src = vidLink.src;
 
-                var feedMenu = article[i].getElementsByClassName("_hmd6j _8oo9w")[0];
+                var feedMenu = article[i].getElementsByClassName("ltpMr Slqrh")[0];
 
-                var arrowFeed = article[i].getElementsByClassName("_5wmqs")[0];
-                if (typeof arrowFeed !== "undefined")
+                var arrowFeedLeft = article[i].getElementsByClassName("MpBh3 _2Igxi rtQVh")[0];
+                if (typeof arrowFeedLeft !== "undefined")
                 {
-                    arrowFeed.onclick = function () { reset(); };
+                    arrowFeedLeft.onclick = function () { reset(); };
                 }
 
-                var arrowArticleLeft = article[i].getElementsByClassName("coreSpriteLeftChevron")[0];
+                var arrowFeedRight = article[i].getElementsByClassName("MpBh3 Zk-Zb YqVDN")[0];
+                if (typeof arrowFeedRight !== "undefined")
+                {
+                    arrowFeedRight.onclick = function () { reset(); };
+                }
+//Profile
+                var arrowArticleLeft = article[i].getElementsByClassName("SWk3c _2Igxi rtQVh")[0];
                 if (typeof arrowArticleLeft !== "undefined")
                 {
                     arrowArticleLeft.onclick = function () { reset(); };
                 }
 
-                var arrowArticleRight = article[i].getElementsByClassName("coreSpriteRightChevron")[0];
+                var arrowArticleRight = article[i].getElementsByClassName("SWk3c Zk-Zb YqVDN")[0];
                 if (typeof arrowArticleRight !== "undefined")
                 {
                     arrowArticleRight.onclick = function () { reset(); };
                 }
-//Profile
-                var arrowSwitchLeft = document.getElementsByClassName("coreSpriteLeftPaginationArrow")[0];
+
+                var arrowSwitchLeft = document.getElementsByClassName("qSTh6 FCItc")[0];
                 if (typeof arrowSwitchLeft !== "undefined")
                 {
                     arrowSwitchLeft.onclick = function () { setTimeout(reset, 1500); };
                 }
 
-                var arrowSwitchRight = document.getElementsByClassName("coreSpriteRightPaginationArrow")[0];
+                var arrowSwitchRight = document.getElementsByClassName("HBoOv _1bdSS")[0];
                 if (typeof arrowSwitchRight !== "undefined")
                 {
                     arrowSwitchRight.onclick = function () { setTimeout(reset, 1500); };
                 }
 
                 if (feedMenu.innerHTML.indexOf("Download") === -1)
-                    feedMenu.innerHTML += "<a class=\"_l9yih coreDownloadSaveButton\" href=\"" + src + "\" download target=\"_blank\" role=\"button\"><span class=\"_8scx2\" style=\"background-image: url(https://maxhyt.github.io/InstagramPlusPlus/download.png); width: 24px; height: 24px;\">Download</span></a>";
+                    feedMenu.innerHTML += "<a class=\"fscHb coreDownloadSaveButton\" href=\"" + src + "\" download target=\"_blank\"><span class=\"Szr5J\" style=\"background-image: url(https://maxhyt.github.io/InstagramPlusPlus/download.png); width: 24px; height: 24px;\">Download</span></a>";
             }
             dlButton();
         }, 500);
