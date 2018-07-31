@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Instagram++
 // @namespace    maxhyt.instagrampp
-// @version      2.3
+// @version      2.4
 // @description  Instagram++ Help Tools
 // @author       Maxhyt
 // @homepage     https://maxhyt.github.io/InstagramPlusPlus/
@@ -178,7 +178,7 @@
 
                 var feedMenu = article[i].getElementsByClassName("ltpMr Slqrh")[0];
 
-                var arrowFeedLeft = article[i].getElementsByClassName("MpBh3 _2Igxi rtQVh")[0];
+                /*var arrowFeedLeft = article[i].getElementsByClassName("MpBh3 _2Igxi rtQVh")[0];
                 if (typeof arrowFeedLeft !== "undefined")
                 {
                     arrowFeedLeft.onclick = function () { reset(); };
@@ -188,34 +188,34 @@
                 if (typeof arrowFeedRight !== "undefined")
                 {
                     arrowFeedRight.onclick = function () { reset(); };
-                }
+                }*/
 //Profile
-                var arrowArticleLeft = article[i].getElementsByClassName("SWk3c _2Igxi rtQVh")[0];
+                var arrowArticleLeft = document.getElementsByClassName("coreSpriteLeftPaginationArrow")[0];
                 if (typeof arrowArticleLeft !== "undefined")
                 {
-                    arrowArticleLeft.onclick = function () { reset(); };
+                    arrowArticleLeft.onclick = function () { setTimeout(reset, 800); };
                 }
 
-                var arrowArticleRight = article[i].getElementsByClassName("SWk3c Zk-Zb YqVDN")[0];
+                var arrowArticleRight = document.getElementsByClassName("coreSpriteRightPaginationArrow")[0];
                 if (typeof arrowArticleRight !== "undefined")
                 {
-                    arrowArticleRight.onclick = function () { reset(); };
+                    arrowArticleRight.onclick = function () { setTimeout(reset, 800); };
                 }
 
-                var arrowSwitchLeft = document.getElementsByClassName("qSTh6 FCItc")[0];
+                var arrowSwitchLeft = article[0].getElementsByClassName("coreSpriteLeftChevron")[0];
                 if (typeof arrowSwitchLeft !== "undefined")
                 {
-                    arrowSwitchLeft.onclick = function () { setTimeout(reset, 1500); };
+                    arrowSwitchLeft.onclick = function () { setTimeout(reset, 500); };
                 }
 
-                var arrowSwitchRight = document.getElementsByClassName("HBoOv _1bdSS")[0];
+                var arrowSwitchRight = article[0].getElementsByClassName("coreSpriteRightChevron")[0];
                 if (typeof arrowSwitchRight !== "undefined")
                 {
-                    arrowSwitchRight.onclick = function () { setTimeout(reset, 1500); };
+                    arrowSwitchRight.onclick = function () { setTimeout(reset, 500); };
                 }
 
                 if (feedMenu.innerHTML.indexOf("Download") === -1)
-                    feedMenu.innerHTML += "<a class=\"fscHb coreDownloadSaveButton\" href=\"" + src + "\" download target=\"_blank\"><span class=\"Szr5J\" style=\"background-image: url(https://maxhyt.github.io/InstagramPlusPlus/download.png); width: 24px; height: 24px;\">Download</span></a>";
+                    feedMenu.innerHTML += "<span class=\"_15y0l\"><a class=\"coreDownloadSaveButton\" href=\"" + src + "\" download target=\"_blank\"><button class=\"oF4XW dCJp8\"><span style=\"background-image: url(https://maxhyt.github.io/InstagramPlusPlus/download.png); width: 24px; height: 24px;\"></span></button></a></span>";
             }
             dlButton();
         }, 500);
